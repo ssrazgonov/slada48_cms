@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	
+	<div class="auction">
+		<div class="auction__header">
+			<h3 class="auction__title">СЛАДКИЙ АУКЦИОН</h3>
+		</div>
+
+		<div class="auction__body">
+			<div class="auction__part auction__part_left">
+				<div class="auction__item">
+					<img src="auction__img.jpg" class="auction__img">
+				</div>
+				<div class="auction__rate"></div>
+			</div>
+
+			<div class="auction__part auction__part_right">
+				<div class="timer">
+					<div class="timer__title">До окончания аукциона:</div>
+					<div class="timer__counter">
+						<div class="timer__item timer__days"></div>
+						<div class="timer__item timer__hours"></div>
+						<div class="timer__item timer__minutes"></div>
+						<div class="timer__item timer__seconds"></div>
+					</div>
+				</div>
+				
+				<div class="price"></div>
+
+				<div class="bet">
+					<button class="bet_button">Сделать ставку</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
