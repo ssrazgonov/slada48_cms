@@ -9,6 +9,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -58,12 +59,33 @@ AppAsset::register($this);
 					<li class="nav-item">
 						<a class="nav-link" href=""><i class="fa fa-search"></i></a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href=""><i class="fa fa-user-plus"></i> Регистрация</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href=""><i class="fa fa-sign-in-alt"></i> Вход</a>
-					</li>
+
+					<?php if(Yii::$app->user->isGuest): ?>
+						<li class="nav-item">
+							<a class="nav-link" href="<?= Url::to(['site/signup']); ?>"><i class="fa fa-user-plus"></i> Регистрация</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="<?= Url::to(['site/login']); ?>"><i class="fa fa-sign-in-alt"></i> Вход</a>
+						</li>
+					<?php else : ?>
+						<li class="nav-item">
+							<a class="nav-link" href=""><i class="far fa-user"></i> <?= Yii::$app->user->identity->username ?></a>
+							<ul>
+								<li><a href="<?= Url::to(['personal/index']); ?>">Личный кабинет</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">
+								<?=Html::beginForm(['/site/logout'], 'post') ?>
+								<i class="fas fa-door-open"></i><?= Html::submitButton(
+										'Выход',
+										['class' => 'btn btn-link logout']) ?>
+								<?=	Html::endForm() ?>
+							</a>
+							
+						</li>
+					<?php endif; ?>
+
 					<li class="nav-item">
 						<a class="nav-link" href=""><i class="fa fa-shopping-cart"></i>&nbsp;<span class="badge badge-light">10</span></a>
 					</li>

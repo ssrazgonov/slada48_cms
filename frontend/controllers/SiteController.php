@@ -14,6 +14,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\EntryForm;
 
 /**
  * Site controller
@@ -256,5 +257,30 @@ class SiteController extends Controller
         return $this->render('resendVerificationEmail', [
             'model' => $model
         ]);
+    }
+
+    /**
+     * Test action wich only display message
+     * 
+     * @return mixed
+     */
+    public function actionSay($message = "Привет")
+    {
+        return $this->render('say', ['message' => $message]);
+    }
+
+    /**
+     * This action for EntryForm actions
+     * @return mixed
+     */
+    public function actionEntry()
+    {
+        $model = new EntryForm();
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            return $this->render('entry-confirm', ['model' => $model]);
+        } else {
+            return $this->render('entry', ['model' => $model]);
+        }
     }
 }
