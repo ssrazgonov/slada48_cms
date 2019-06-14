@@ -10,20 +10,22 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to login:</p>
+<div class="container pt-5 pb-5">
+    <div class="site-login">
+        <h1><?= Html::encode($this->title) ?></h1>
 
-    <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+        <p>Please fill out the following fields to login:</p>
 
-                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+        <div class="row">
+            <div class="col-lg-5">
+                <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
-                <?= $form->field($model, 'password')->passwordInput() ?>
+                <?= $form->field($model, 'username')->textInput(['autofocus' => true])->label('Имя пользователя') ?>
 
-                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                <?= $form->field($model, 'password')->passwordInput()->label('Пароль') ?>
+
+                <?= $form->field($model, 'rememberMe')->checkbox()->label('Запомнить меня') ?>
 
                 <div style="color:#999;margin:1em 0">
                     If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
@@ -32,10 +34,12 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
 
                 <div class="form-group">
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                    <?= Html::submitButton('Войти', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
                 </div>
 
-            <?php ActiveForm::end(); ?>
+                <?php ActiveForm::end(); ?>
+            </div>
         </div>
     </div>
 </div>
+

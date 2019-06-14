@@ -93,80 +93,8 @@ AppAsset::register($this);
 			</div>
 		</nav>
 	</header>
-	<div class="container-fluid pt-5 pb-5" style="background: url(img/bg.png) center; background-size: cover; background-color: #ce39b21a;">
-		<div class="row">
-			<div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
-				<h1 class="text-white text-center pt-5">Делайте свою жизнь сладкой! Торты на заказ в Липецке</h1>
-				<h2 class="text-white text-center pt-5">Потому что мы с вами!</h2>
-				<div class="text-center p-5"><a href="" class="btn btn-success">Действующие Акции</a></div>
-			</div>
-			<div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
-				<div class="card bg-light">
-					<h5 class="card-header text-uppercase">Сладкий аукцион</h5>
-					<div class="card-body">
-						<div class="row">
-							<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-								<img src="img/auc.jpg" alt="" class="w-100">
-								<p class="text-center text-success">Ставок: 4</p>
-							</div>
-							<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-								<h5 class="card-title">До окончания аукциона:</h5>
-								<div class="numbers row">
-									<div class="col-md-3 text-center display-6">2</div>
-									<div class="col-md-3 text-center display-6">5</div>
-									<div class="col-md-3 text-center display-6">25</div>
-									<div class="col-md-3 text-center display-6">55</div>
-								</div>
-								<div class="text row">
-									<div class="col-md-3 text-center pb-3">Дней</div>
-									<div class="col-md-3 text-center pb-3">Часов</div>
-									<div class="col-md-3 text-center pb-3">Минут</div>
-									<div class="col-md-3 text-center pb-3">Секунд</div>
-								</div>
-								<p class="card-text">Купить торт за: <a class="text-success" href="">25 rub</a></p>
 
-								<a href="#" class="btn btn-success mt-2">участвовать</a>
-								<a href="#" class="btn btn-primary mt-2">Условия участия</a>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<!-- <div class="auction">
-		<div class="auction__header">
-			<h3 class="auction__title">СЛАДКИЙ АУКЦИОН</h3>
-		</div>
-
-		<div class="auction__body">
-			<div class="auction__part auction__part_left">
-				<div class="auction__item">
-					<img src="modules/auction/auction__img.jpg" class="auction__img">
-				</div>
-				<div class="auction__rate"></div>
-			</div>
-
-			<div class="auction__part auction__part_right">
-				<div class="timer">
-					<div class="timer__title">До окончания аукциона:</div>
-					<div class="timer__counter">
-						<div class="timer__item timer__days"></div>
-						<div class="timer__item timer__hours"></div>
-						<div class="timer__item timer__minutes"></div>
-						<div class="timer__item timer__seconds"></div>
-					</div>
-				</div>
-				
-				<div class="price"></div>
-
-				<div class="bet">
-					<button class="bet_button">Сделать ставку</button>
-				</div>
-			</div>
-		</div>
-	</div> -->
-			</div>
-		</div>
-	</div>
 
 <?= $content ?>
 
