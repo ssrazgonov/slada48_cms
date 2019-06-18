@@ -149,3 +149,100 @@ a:hover{
     margin: 0px;
     background-color: #343a404d;
 }
+.days-in-auc{
+    font-size: 12px;
+}
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+[type=radio]:checked + img {
+  outline: 1px solid #007bff;
+}
+.cart-img{
+    width: 60px;
+    height: auto;
+}
+.cart-table{
+    border: 1px solid black;
+    text-align: center;
+}
+.cart-table td, .cart-table tr, .cart-table th{
+    border: 1px solid black;
+    padding: 10px;
+}
+.del-from-cart{
+    background-color: transparent;
+    border:none;
+    outline: none;
+
+}
+.del-from-cart:hover{
+    color: #007bff;
+}
+
+.cake-filling-des {
+    display: none;
+}
+.cake-filling-des_show {
+    display: block;
+    animation-name: cake-filling-des_show;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes cake-filling-des_show {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.cake-filling-lbl {
+    position: relative;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.cake-filling-lbl:hover {
+    z-index: 10;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.cake-single-img {
+    animation-name: cake-img-zoom;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes cake-img-zoom {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
