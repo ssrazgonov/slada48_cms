@@ -9,6 +9,7 @@
                     <div class="cake-description">
                         <h1 class="border-bottom border-dark pb-2"><?= $product->title ?></h1>
                         <p><?= $product->description ?></p>
+                        <p>Арт. <?= $product->article ?></p>
                         <p><span>Цена за 1 кг: </span><strong> <?= $product->price ?> руб.</strong></p>
                     </div>
 

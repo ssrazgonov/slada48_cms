@@ -13,6 +13,9 @@ class m190618_210424_create_product_fake_data extends Migration
     public function safeUp()
     {
         $categories = \common\models\ProductCategory::find()->asArray()->all();
+        $cat[0]['count'] = 15;
+        $cat[1]['count'] = 9;
+         $cat[2]['count'] = 25;
 
         foreach ($categories as $cat) {
             for ($i = 0; $i < 10; $i++) {

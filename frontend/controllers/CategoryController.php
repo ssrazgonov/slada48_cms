@@ -10,8 +10,17 @@ use yii\web\Controller;
 
 class CategoryController extends Controller
 {
-    public function actionIndex() {
-        return $this->render('index');
+    public function actionIndex($order = 'price') {
+
+
+        $categories = ProductCategory::find()->asArray()->all();
+
+        foreach ($categories as &$cat) {
+            $cat['prod_count'] = Product::find()->where(['cat_id' => $cat['id']])->count();
+            $cat['products'] = Product::find()->where(['cat_id' => $cat['id']])->limit(4)->orderBy($order)->all();
+        }
+
+        return $this->render('index', compact('products', 'categories'));
     }
 
     public function actionShow($id) {
