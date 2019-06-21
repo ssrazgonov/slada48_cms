@@ -31,8 +31,9 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
                         <strong>Описание начинки:</strong>
 
+                        <?php $show = true; ?>
                         <?php foreach ($product->productOption as $option): ?>
-                            <p data-id="1" class="cake-filling-des cake-filling-des_show">
+                            <p data-id="<?= $option->id ?>" class="cake-filling-des <?php echo $show ? 'cake-filling-des_show' : ''; $show = false; ?> ">
                                 <?= $option->description ?>
                             </p>
                         <?php endforeach; ?>
