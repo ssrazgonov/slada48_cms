@@ -14,9 +14,11 @@
                     </div>
 
                     <div class="row p-3">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
-                            <strong>начинки на выбор:</strong>
-                        </div>
+                        <?php if ($product->productOption): ?>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                                <strong>начинки на выбор:</strong>
+                            </div>
+                        <?php endif; ?>
 
                         <?php foreach ($product->productOption as $option): ?>
                             <div class="col-2 p-1">
@@ -28,16 +30,19 @@
                         <?php endforeach; ?>
 
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
-                        <strong>Описание начинки:</strong>
 
-                        <?php $show = true; ?>
-                        <?php foreach ($product->productOption as $option): ?>
-                            <p data-id="<?= $option->id ?>" class="cake-filling-des <?php echo $show ? 'cake-filling-des_show' : ''; $show = false; ?> ">
-                                <?= $option->description ?>
-                            </p>
-                        <?php endforeach; ?>
-                    </div>
+                    <?php if ($product->productOption): ?>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                            <strong>Описание начинки:</strong>
+
+                            <?php $show = true; ?>
+                            <?php foreach ($product->productOption as $option): ?>
+                                <p data-id="<?= $option->id ?>" class="cake-filling-des <?php echo $show ? 'cake-filling-des_show' : ''; $show = false; ?> ">
+                                    <?= $option->description ?>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
                     <div class="buy-btn-shell pt-2">
                         <button class="btn btn-primary">Задать вопрос</button>
                         <button class="btn btn-success">В корзину</button>
