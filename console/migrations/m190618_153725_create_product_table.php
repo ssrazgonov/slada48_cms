@@ -15,11 +15,13 @@ class m190618_153725_create_product_table extends Migration
         $this->createTable('{{%product}}', [
             'id' => $this->primaryKey(),
             'title' => $this->string(255),
-            'article' => $this->string(255),
+            'vendor_code' => $this->string(255),
             'cat_id' => $this->integer(),
             'price' => $this->float(),
+            'price_type_id' => $this->integer(),
             'description' => $this->string(255),
             'prod_img' => $this->string(255),
+            'prod_slug' => $this->string(255)->unique(),
             'prod_slug' => $this->string(255)->unique(),
         ]);
     }

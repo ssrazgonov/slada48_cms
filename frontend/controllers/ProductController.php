@@ -6,6 +6,7 @@ namespace frontend\controllers;
 
 use common\models\Product;
 use common\models\ProductCategory;
+use common\models\ProductOption;
 use yii\web\Controller;
 
 class ProductController extends Controller

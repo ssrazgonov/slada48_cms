@@ -54,4 +54,9 @@ class Product extends \yii\db\ActiveRecord
             'article' => 'Артикуль',
         ];
     }
+
+    public function getProductOption() {
+        return $this->hasMany(ProductOption::className(), ['id' => 'product_option_id'])
+            ->viaTable('product_option_rel', ['product_id' => 'id']);
+    }
 }

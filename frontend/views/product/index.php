@@ -18,66 +18,24 @@
                             <strong>начинки на выбор:</strong>
                         </div>
 
-                        <div class="col-2 p-1">
-                            <label class="cake-filling-lbl">
-                                <input class="cake-filling-radio" data-target="1" type="radio" name="test" value="n1" checked>
-                                <img src="img/nachinka1.png" class="w-100" title="Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра черная смородина.">
-                            </label>
-                        </div>
-                        <div class="col-2 p-1">
-                            <label class="cake-filling-lbl">
-                                <input class="cake-filling-radio" data-target="2" type="radio" name="test" value="n2">
-                                <img src="img/nachinka2.jpg" class="w-100" title="Слои медового полуфабриката соединены между собой сливочным кремом с вареным сгущенным молоком.">
-                            </label>
-                        </div>
-                        <div class="col-2 p-1">
-                            <label class="cake-filling-lbl">
-                                <input class="cake-filling-radio" data-target="3" type="radio" name="test" value="n3">
-                                <img src="img/nachinka3.jpg" class="w-100">
-                            </label>
-                        </div>
-                        <div class="col-2 p-1">
-                            <label class="cake-filling-lbl">
-                                <input class="cake-filling-radio" data-target="4" type="radio" name="test" value="n4">
-                                <img src="img/nachinka4.jpg" class="w-100">
-                            </label>
-                        </div>
-                        <div class="col-2 p-1">
-                            <label class="cake-filling-lbl">
-                                <input class="cake-filling-radio"data-target="5" type="radio" name="test" value="n5">
-                                <img src="img/nachinka5.png" class="w-100">
-                            </label>
-                        </div>
-                        <div class="col-2 p-1">
-                            <label class="cake-filling-lbl">
-                                <input class="cake-filling-radio" data-target="6" type="radio" name="test" value="n6">
-                                <img src="img/nachinka6.jpg" class="w-100">
-                            </label>
-                        </div>
+                        <?php foreach ($product->productOption as $option): ?>
+                            <div class="col-2 p-1">
+                                <label class="cake-filling-lbl">
+                                    <input class="cake-filling-radio" data-target="<?= $option->id ?>" type="radio" name="product_option" value="<?= $option->id ?>">
+                                    <img src="<?= $option->img ?>" class="w-100" title="<?= $option->description ?>">
+                                </label>
+                            </div>
+                        <?php endforeach; ?>
 
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
                         <strong>Описание начинки:</strong>
 
-                        <p data-id="1" class="cake-filling-des cake-filling-des_show">
-                            Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра черная смородина.
-                        </p>
-                        <p data-id="2" class="cake-filling-des">
-                            Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра сладкая малина.
-                        </p>
-                        <p data-id="3" class="cake-filling-des">
-                            Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра безумный банан.
-                        </p>
-                        <p data-id="4" class="cake-filling-des">
-                            Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра отвязная дыня.
-                        </p>
-                        <p data-id="5" class="cake-filling-des">
-                            Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра вишенка-черешенка.
-                        </p>
-                        <p data-id="6" class="cake-filling-des">
-                            Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра.
-                        </p>
-
+                        <?php foreach ($product->productOption as $option): ?>
+                            <p data-id="1" class="cake-filling-des cake-filling-des_show">
+                                <?= $option->description ?>
+                            </p>
+                        <?php endforeach; ?>
                     </div>
                     <div class="buy-btn-shell pt-2">
                         <button class="btn btn-primary">Задать вопрос</button>
