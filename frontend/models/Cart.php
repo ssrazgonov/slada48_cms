@@ -10,7 +10,7 @@ use yii\base\Model;
 
 class Cart extends Model
 {
-    public static function getProducts($cart) {
+    public static function getProducts($cart, $total = false) {
 
         $products = [];
         $i = 0;
@@ -21,6 +21,9 @@ class Cart extends Model
             $product['id'] = $i;
             $products[] = $product;
             $i++;
+        }
+        if ($total) {
+            return count($products);
         }
 
         return $products;

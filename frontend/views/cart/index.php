@@ -1,8 +1,8 @@
 <main class="container">
-    <h1 class="pt-5 pb-5">Корзина</h1>
+    <h1 class="pt-5">Корзина</h1>
 
     <?php if($productsInCart) : ?>
-    <table class="cart-table mb-2">
+    <table class="cart-table mb-2 mt-5">
         <thead>
         <tr>
             <th scope="col">№</th>
@@ -42,7 +42,7 @@
     </div>
 
     <?php else: ?>
-        <div class="jumbotron">
+        <div class="jumbotron pt-0 pb-0">
             <h1 class="display-4">Ваша корзина пуста</h1>
             <p class="lead"><img src="http://51cube.com.ua/foto/empty-cart.jpg" alt=""></p>
             <hr class="my-4">

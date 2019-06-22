@@ -10,6 +10,9 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 use yii\helpers\Url;
+use frontend\models\Cart;
+
+$userCart = Yii::$app->session->get('cart') ? Yii::$app->session->get('cart') : [];
 
 AppAsset::register($this);
 ?>
@@ -87,7 +90,7 @@ AppAsset::register($this);
 					<?php endif; ?>
 
 					<li class="nav-item <?= Yii::$app->session->getFlash('success_add')? 'add_cart_anim' : ''?>">
-						<a class="nav-link" href="<?= Url::to(['cart/index']) ?>"><i class="fa fa-shopping-cart"></i>&nbsp;<span class="badge badge-light">10</span></a>
+						<a class="nav-link" href="<?= Url::to(['cart/index']) ?>"><i class="fa fa-shopping-cart"></i>&nbsp;<span class="badge badge-light"><?= Cart::getProducts($userCart, true) ?></span></a>
 					</li>
 				</ul>
 			</div>
