@@ -86,8 +86,8 @@ AppAsset::register($this);
 						</li>
 					<?php endif; ?>
 
-					<li class="nav-item">
-						<a class="nav-link" href=""><i class="fa fa-shopping-cart"></i>&nbsp;<span class="badge badge-light">10</span></a>
+					<li class="nav-item <?= Yii::$app->session->getFlash('success_add')? 'add_cart_anim' : ''?>">
+						<a class="nav-link" href="<?= Url::to(['cart/index']) ?>"><i class="fa fa-shopping-cart"></i>&nbsp;<span class="badge badge-light">10</span></a>
 					</li>
 				</ul>
 			</div>

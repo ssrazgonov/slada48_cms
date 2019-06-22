@@ -1,55 +1,78 @@
+<?php
+use yii\helpers\Url;
+?>
+
 <main class="container-fluid">
     <div class="row">
-        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-            <div class="row pb-5 pt-5">
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><img src="<?= $product->prod_img ?>" alt="" class="cake-single-img w-100"></div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="cake-description">
-                        <h1 class="border-bottom border-dark pb-2"><?= $product->title ?></h1>
-                        <p><?= $product->description ?></p>
-                        <p>Арт. <?= $product->article ?></p>
-                        <p><span>Цена за 1 кг: </span><strong> <?= $product->price ?> руб.</strong></p>
-                    </div>
+            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                <form action="<?= Url::to(['cart/cart-add']) ?>" method="post">
 
-                    <div class="row p-3">
+                    <input type="hidden" name="_csrf-frontend" value="<?= Yii::$app->request->getCsrfToken()?>">
+                    <input type="hidden" name="product_id" value="<?= $product->id ?>">
+                    <input type="hidden" name="product_quantity" value="2">
+                <div class="row pb-5 pt-5">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><img src="<?= $product->prod_img ?>" alt="" class="cake-single-img w-100"></div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="cake-description">
+                            <h1 class="border-bottom border-dark pb-2"><?= $product->title ?></h1>
+                            <p><?= $product->description ?></p>
+                            <p>Арт. <?= $product->vendor_code ?></p>
+                            <p><span>Цена за 1 кг: </span><strong> <?= $product->price ?> руб.</strong></p>
+                        </div>
+
+                        <div class="row p-3">
+                            <?php if ($product->productOption): ?>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                                    <strong>начинки на выбор:</strong>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php foreach ($product->productOption as $option): ?>
+                                <div class="col-2 p-1">
+                                    <label class="cake-filling-lbl">
+                                        <input class="cake-filling-radio" data-target="<?= $option->id ?>" type="radio" name="product_option" value="<?= $option->id ?>">
+                                        <img src="<?= $option->img ?>" class="w-100" title="<?= $option->description ?>">
+                                    </label>
+                                </div>
+                            <?php endforeach; ?>
+
+                        </div>
+
                         <?php if ($product->productOption): ?>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
-                                <strong>начинки на выбор:</strong>
+                                <strong>Описание начинки:</strong>
+
+                                <?php $show = true; ?>
+                                <?php foreach ($product->productOption as $option): ?>
+                                    <p data-id="<?= $option->id ?>" class="cake-filling-des <?php echo $show ? 'cake-filling-des_show' : ''; $show = false; ?> ">
+                                        <?= $option->description ?>
+                                    </p>
+                                <?php endforeach; ?>
                             </div>
                         <?php endif; ?>
-
-                        <?php foreach ($product->productOption as $option): ?>
-                            <div class="col-2 p-1">
-                                <label class="cake-filling-lbl">
-                                    <input class="cake-filling-radio" data-target="<?= $option->id ?>" type="radio" name="product_option" value="<?= $option->id ?>">
-                                    <img src="<?= $option->img ?>" class="w-100" title="<?= $option->description ?>">
-                                </label>
-                            </div>
-                        <?php endforeach; ?>
-
-                    </div>
-
-                    <?php if ($product->productOption): ?>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
-                            <strong>Описание начинки:</strong>
-
-                            <?php $show = true; ?>
-                            <?php foreach ($product->productOption as $option): ?>
-                                <p data-id="<?= $option->id ?>" class="cake-filling-des <?php echo $show ? 'cake-filling-des_show' : ''; $show = false; ?> ">
-                                    <?= $option->description ?>
-                                </p>
-                            <?php endforeach; ?>
+                        <div class="buy-btn-shell pt-2">
+                            <button class="btn btn-primary">Задать вопрос</button>
+                            <button type="submit" class="btn btn-success">В корзину</button>
                         </div>
-                    <?php endif; ?>
-                    <div class="buy-btn-shell pt-2">
-                        <button class="btn btn-primary">Задать вопрос</button>
-                        <button class="btn btn-success">В корзину</button>
+
+                        <?php if (Yii::$app->session->getFlash('success_add')): ?>
+                            <div class="alert alert-success alert-dismissible fade show mt-2">
+                                Товар успешно добавлен
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
+                </form>
             </div>
-        </div>
+
+
 
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pt-5">
             <div class="card mb-2">

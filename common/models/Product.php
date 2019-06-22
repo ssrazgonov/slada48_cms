@@ -33,8 +33,8 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             [['cat_id'], 'integer'],
-            [['price'], 'number'],
-            [['title', 'description', 'prod_img', 'prod_slug', 'article'], 'string', 'max' => 255],
+            [['price', 'price_type_id'], 'number'],
+            [['title', 'description', 'prod_img', 'prod_slug'], 'string', 'max' => 255],
         ];
     }
 
@@ -43,16 +43,16 @@ class Product extends \yii\db\ActiveRecord
      */
     public function attributeLabels()
     {
-        return [
-            'id' => 'ID',
-            'title' => 'Title',
-            'cat_id' => 'Cat ID',
-            'price' => 'Price',
-            'description' => 'Description',
-            'prod_img' => 'Prod Img',
-            'prod_slug' => 'Prod Slug',
-            'article' => 'Артикуль',
-        ];
+//        return [
+//            'id' => 'ID',
+//            'title' => 'Title',
+//            'cat_id' => 'Cat ID',
+//            'price' => 'Price',
+//            'description' => 'Description',
+//            'prod_img' => 'Prod Img',
+//            'prod_slug' => 'Prod Slug',
+//            'article' => 'Артикуль',
+//        ];
     }
 
     public function getProductOption() {
