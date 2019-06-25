@@ -6,9 +6,9 @@
         <thead>
         <tr>
             <th scope="col">№</th>
-            <th scope="col">Картинка</th>
+            <th scope="col">Изоображение</th>
             <th scope="col">Наименование</th>
-            <th scope="col">Начинка</th>
+            <th scope="col">Опции</th>
             <th scope="col">Кол-во</th>
             <th scope="col">Цена</th>
             <th scope="col">Удалить</th>
@@ -20,8 +20,8 @@
         <tr>
             <th><?= $i++ ?></th>
             <td><img src="<?= $product['product']['prod_img'] ?>" alt="<?= $product['product']['title'] ? $product['product']['title'] : $product['product']['vendor_code'] ?>" class="cart-img"></td>
-            <td><?= $product['product']['title'] ? $product['product']['title'] : $product['product']['vendor_code'] ?></td>
-            <td><?= $product['product']['title'] ? $product['product']['title'] : $product['product']['vendor_code'] ?></td>
+            <td><?= $product['product']['vendor_code'] ? $product['product']['vendor_code'].'</br>' : ""  ?> <?= $product['product']['title'] ?></td>
+            <td><?= $product['option'] ? $product['option']['description'] : '' ?></td>
             <td><?= $product['quantity'] ?></td>
             <td><?= $product['product']['price'] ?></td>
             <td>
@@ -37,8 +37,8 @@
     </table>
     <div class="pb-3">Всего: 750 руб.</div>
     <div class="pb-5">
-        <button class="btn btn-success">Сделать заказ</button>
-        <button class="btn btn-primary">В магазин</button>
+        <a href=""><button class="btn btn-success">Сделать заказ</button></a>
+        <a href="<?= \yii\helpers\Url::to(['category/index']) ?>"><button class="btn btn-primary">В магазин</button></a>
     </div>
 
     <?php else: ?>
