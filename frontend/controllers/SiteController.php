@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\ProductCategory;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -15,6 +16,7 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use frontend\models\EntryForm;
+use common\models\Product;
 
 /**
  * Site controller
@@ -75,7 +77,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $categories = ProductCategory::find()->all();
+
+		return $this->render('index', compact('categories'));
     }
 
     /**
@@ -91,7 +95,7 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            return $this->goHome();
         } else {
             $model->password = '';
 

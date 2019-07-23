@@ -9,11 +9,11 @@
             <?php foreach ($products as $product) : ?>
                 <section class="col-lg-3 col-sm-6 pt-5">
                     <div class="card cakes">
-                        <a href="<?= \yii\helpers\Url::to(['product/index', 'id' => $product->id]) ?>"><img class="card-img-top border-bottom p-3" src="<?= $product->prod_img ?>" alt="Card image cap"></a>
+                        <a href="<?= \yii\helpers\Url::to(['product/index', 'id' => $product->id]) ?>"><img class="card-img-top border-bottom p-3" src="/upload/product/<?= $product->id ?>/<?= $product->prod_img ?>" alt="Card image cap"></a>
                         <div class="card-body">
                             <h2 class="card-title"><a class="text-success" href="<?= \yii\helpers\Url::to(['product/index', 'id' => $product->id]) ?>"><?= $product->title ?></a></h2>
                             <div class="">
-                                <p><?= $product->prod_slug ?></p>
+
                                 <p><?= $product->price ?> руб. за кг.</p>
                                 <button class="btn btn-success">В корзину</button>
                             </div>

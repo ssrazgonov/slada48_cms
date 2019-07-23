@@ -173,6 +173,7 @@ a:hover{
 .cart-table{
     border: 1px solid black;
     text-align: center;
+    width: 100%;
 }
 .cart-table td, .cart-table tr, .cart-table th{
     border: 1px solid black;
@@ -267,4 +268,19 @@ a:hover{
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.order-step {
+    color: #ebe5ea;
+    background-color: #343a40;
+}
+
+.user_incart {
+    padding: 0;
+}
+
+.user_incart li {
+    list-style-type: none;
+    border-bottom: 1px black solid;
+    padding: 10px 10px;
 }

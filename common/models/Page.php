@@ -45,12 +45,12 @@ class Page extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Заголвок страницы',
-            'keywords' => 'Keywords',
-            'description' => 'Description',
-            'content' => 'Content',
-            'parent_id' => 'Parent ID',
-            'sort' => 'Sort',
+            'title' => 'Заголовок страницы',
+            'keywords' => 'Ключевые слова',
+            'description' => 'Описание (мета)',
+            'content' => 'Контент',
+            'parent_id' => 'ID родительской категории',
+            'sort' => 'Сортировка внутри категории',
         ];
     }
 }

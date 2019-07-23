@@ -20,63 +20,62 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
+
     <title><?= Html::encode($this->title) ?></title>
+
     <?php $this->head() ?>
 </head>
+
 <body>
 <?php $this->beginBody() ?>
-
-<div class="wrap">
-    <?php
-    Yii::$app->name = "Панель управления";
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-//        ['label' => 'Home', 'url' => ['/site/index']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            .'<a>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            .'</a>'
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
-
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <hr>
-        <?= $content ?>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Отображение меню</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Панель управления</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Панель управления</a></li>
+                <li><a href="#">Настройки сайта</a></li>
+                <li><a href="#">Профиль администратора</a></li>
+                <li><a href="#">Помощь</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Поиск...">
+            </form>
+        </div>
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'order/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['order/index']) ?>">Управление заказами</a></li>
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'user/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['user/index']) ?>">Управление покупателями</a></li>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'product-category/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['product-category/index']) ?>">Категории товаров</a></li>
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'product/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['product/index']) ?>">Товары</a></li>
+
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'page-category/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['page-category/index']) ?>">Разделы</a></li>
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'page/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['page/index']) ?>">Страницы сайта</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <?= $content ?>
+        </div>
     </div>
-</footer>
+</div>
 
 <?php $this->endBody() ?>
 </body>

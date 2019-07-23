@@ -44,12 +44,17 @@ class Order extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_id' => 'User ID',
-            'status' => 'Status',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
-            'amount' => 'Amount',
-            'payment_mehtod' => 'Payment Mehtod',
+            'user_id' => 'ID пользователя',
+            'status' => 'Статус',
+            'created_at' => 'Когда создан',
+            'updated_at' => 'Когда редактировался',
+            'amount' => 'Общая сумма заказа',
+            'payment_mehtod' => 'Выбранный метод оплаты',
         ];
+    }
+
+    public function getOrderProduct()
+    {
+        return $this->hasMany(OrderProduct::className(), ['order_id' => 'id']);
     }
 }

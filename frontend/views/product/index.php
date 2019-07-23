@@ -11,23 +11,49 @@ use yii\helpers\Url;
 
                     <input type="hidden" name="_csrf-frontend" value="<?= Yii::$app->request->getCsrfToken()?>">
                     <input type="hidden" name="product_id" value="<?= $product->id ?>">
-                    <input type="hidden" name="product_quantity" value="2">
                 <div class="row pb-5 pt-5">
 
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><img src="<?= $product->prod_img ?>" alt="" class="cake-single-img w-100"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><img src="/upload/product/<?= $product->id ?>/<?= $product->prod_img ?>" alt="" class="cake-single-img w-100"></div>
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="cake-description">
                             <h1 class="border-bottom border-dark pb-2"><?= $product->title ?></h1>
                             <p><?= $product->description ?></p>
                             <p>Арт. <?= $product->vendor_code ?></p>
-                            <p><span>Цена за 1 кг: </span><strong> <?= $product->price ?> руб.</strong></p>
+                            <?php if($product->price_type_id === 1): ?>
+                                <p><span>Цена за 1000 грамм: </span><strong> <?= $product->price ?> руб.</strong></p>
+                            <?php else: ?>
+                                <p><span>Цена за штуку: </span><strong> <?= $product->price ?> руб.</strong></p>
+                            <?php endif; ?>
+                        </div>
+
+                        <div>
+                            <div><strong>Выберите количество: </strong></div>
+                            <?php if ($product->min): ?> <div>Минимальное кол-во: <?= $product->min ?></div> <?php endif; ?>
+                            <select name="product_quantity" id="">
+
+                                <?php if($product->price_type_id === 1): ?>
+
+                                    <?php for ($i = 2000; $i < 5000; $i += 100) : ?>
+                                        <option value="<?= $i ?>"><?= $i ?> гр.</option>
+                                    <?php endfor; ?>
+                                <?php else: ?>
+                                    <?php $min = $product->min ? $product->min : 1; ?>
+                                    <?php for ($i = $min; $i < 100; $i++) : ?>
+                                        <option value="<?= $i ?>"><?= $i ?> шт.</option>
+                                    <?php endfor; ?>
+                                <?php endif; ?>
+
+
+
+                            </select>
+                            <?php ?>
                         </div>
 
                         <div class="row p-3">
                             <?php if ($product->productOption): ?>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
-                                    <strong>начинки на выбор:</strong>
+                                    <strong>Начинки на выбор:</strong>
                                 </div>
                             <?php endif; ?>
 

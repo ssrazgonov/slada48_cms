@@ -27,15 +27,15 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="modules/auction/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="/modules/auction/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body style="background-color: #3e04331a;">
 <?php $this->beginBody() ?>
 <header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-			<a class="navbar-brand" href="#"><img src="img/logo.png" alt="Слада - торты на заказ в липецке" style="height: 45px"></a>
+			<a class="navbar-brand" href="#"><img src="/img/logo.png" alt="Слада - торты на заказ в липецке" style="height: 45px"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -124,7 +124,7 @@ AppAsset::register($this);
 				<div class="social col-md-4 text-white">
 					<p>Следуйте за нами:</p>
 					<p>Принимаем к оплате:</p>
-					<img src="img/paysystems.png" alt="">
+					<img src="/img/paysystems.png" alt="">
 				</div>
 		<address class="col-md-4 text-white">
 			<p><a href="mailto:info@slada48.ru" class="text-white">info@slada48.ru</a></p>
@@ -136,10 +136,10 @@ AppAsset::register($this);
 		
 		
 	</footer>
-	<script src="js/jquery-3.4.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="modules/auction/app.js"></script>
-	<script src="js/app.js"></script>
+	<script src="/js/jquery-3.4.0.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/modules/auction/app.js"></script>
+	<script src="/js/app.js"></script>
 
 <?php $this->endBody() ?>
 </body>

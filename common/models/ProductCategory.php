@@ -43,11 +43,21 @@ class ProductCategory extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'parent_id' => 'Parent ID',
-            'cat_img' => 'Cat Img',
-            'description' => 'Description',
-            'cat_slug' => 'Cat Slug',
+            'title' => 'Тайтл',
+            'parent_id' => 'ID Родительской категории',
+            'cat_img' => 'Изображение',
+            'description' => 'Описание',
+            'cat_slug' => 'Ярлык',
         ];
+    }
+
+    public function getProductCount()
+    {
+        return count(Product::find()->where(['cat_id' => $this->id])->asArray()->all());
+    }
+
+    public function getCategory()
+    {
+        return $this->hasOne(ProductCategory::className(), ['id' => 'parent_id']);
     }
 }

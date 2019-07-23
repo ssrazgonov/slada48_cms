@@ -82,70 +82,17 @@ $this->title = 'My Yii Application';
 	
 	<main class="container">
 		<div class="row pb-5">
+
+            <?php foreach ($categories as $category): ?>
 			<section class="col-lg-3 col-sm-6 pt-5">
-				<a class="card cakes" href="">
-					<img class="card-img-top border-bottom p-3" src="img/cake.png" alt="Card image cap">
+				<a class="card cakes" href="<?= \yii\helpers\Url::to(['category/show', 'id' => $category->id])?>">
+					<img class="card-img-top border-bottom p-3" src="/upload/category/<?=$category->id ?>/<?=$category->cat_img ?>" alt="<?=$category->title ?>">
 					<div class="card-body">
-						<h5 class="card-title text-center text-success">Детские торты 133 вида</h5>
+                        <h5 class="card-title text-center text-success"><?=$category->title ?> <span class="badge badge-primary badge-pill"><?=$category->productCount ?></span></h5>
 					</div>
 				</a>
 			</section>
-			<section class="col-lg-3 col-sm-6 pt-5">
-				<a class="card cakes" href="">
-					<img class="card-img-top border-bottom p-3" src="img/cake2.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title text-center text-success">Детские торты 133 вида</h5>
-					</div>
-				</a>
-			</section>
-			<section class="col-lg-3 col-sm-6 pt-5">
-				<a class="card cakes" href="">
-					<img class="card-img-top border-bottom p-3" src="img/cake3.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title text-center text-success">Детские торты 133 вида</h5>
-					</div>
-				</a>
-			</section>
-			<section class="col-lg-3 col-sm-6 pt-5">
-				<a class="card cakes" href="">
-					<img class="card-img-top border-bottom p-3" src="img/cake4.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title text-center text-success">Детские торты 133 вида</h5>
-					</div>
-				</a>
-			</section>
-			<section class="col-lg-3 col-sm-6 pt-5">
-				<a class="card cakes" href="">
-					<img class="card-img-top border-bottom p-3" src="img/cake5.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title text-center text-success">Детские торты 133 вида</h5>
-					</div>
-				</a>
-			</section>
-			<section class="col-lg-3 col-sm-6 pt-5">
-				<a class="card cakes" href="">
-					<img class="card-img-top border-bottom p-3" src="img/cake6.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title text-center text-success">Детские торты 133 вида</h5>
-					</div>
-				</a>
-			</section>
-			<section class="col-lg-3 col-sm-6 pt-5">
-				<a class="card cakes" href="">
-					<img class="card-img-top border-bottom p-3" src="img/cake7.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title text-center text-success">Детские торты 133 вида</h5>
-					</div>
-				</a>
-			</section>
-			<section class="col-lg-3 col-sm-6 pt-5">
-				<a class="card cakes" href="">
-					<img class="card-img-top border-bottom p-3" src="img/cake8.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title text-center text-success">Детские торты 133 вида</h5>
-					</div>
-				</a>
-			</section>
+            <?php endforeach; ?>
 		</div>
 		<article class="row pb-5">
 			<div class="col-lg-12 text-center p-4">

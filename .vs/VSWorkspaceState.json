@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\frontend",
+    "\\frontend\\controllers",
+    "\\frontend\\models",
+    "\\frontend\\views",
+    "\\frontend\\views\\order"
+  ],
+  "SelectedNode": "\\frontend\\controllers\\SiteController.php",
+  "PreviewInSolutionExplorer": false
+}
