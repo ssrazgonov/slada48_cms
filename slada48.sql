@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 23 2019 г., 05:43
--- Версия сервера: 5.7.24
--- Версия PHP: 7.2.14
+-- Время создания: Июл 24 2019 г., 13:46
+-- Версия сервера: 5.7.23
+-- Версия PHP: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,52 @@ SET time_zone = "+00:00";
 --
 -- База данных: `slada48`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `menu`
+--
+
+DROP TABLE IF EXISTS `menu`;
+CREATE TABLE IF NOT EXISTS `menu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `menu_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `menu_code` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `menu_code` (`menu_code`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Дамп данных таблицы `menu`
+--
+
+INSERT INTO `menu` (`id`, `menu_name`, `menu_code`) VALUES
+(1, 'Верхнее', 'top');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `menu_item`
+--
+
+DROP TABLE IF EXISTS `menu_item`;
+CREATE TABLE IF NOT EXISTS `menu_item` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `label` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `parent_id` int(11) DEFAULT NULL,
+  `menu_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Дамп данных таблицы `menu_item`
+--
+
+INSERT INTO `menu_item` (`id`, `label`, `url`, `parent_id`, `menu_id`) VALUES
+(1, 'О фабрике', '/page/about/', 0, 1),
+(2, 'Наши феи', '/page/fairy/', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -213,15 +259,14 @@ CREATE TABLE IF NOT EXISTS `product` (
   `prod_img` varchar(255) DEFAULT NULL,
   `min` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=102 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=103 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `product`
 --
 
 INSERT INTO `product` (`id`, `title`, `vendor_code`, `cat_id`, `price`, `price_type_id`, `description`, `prod_img`, `min`) VALUES
-(93, 'Песочное с джемом', 'Песочное с джемом 123', 2, 25, 2, '', 'песочное.png', 0),
-(101, 'печенька', '12312', NULL, 1200, 1, 'уфиф фп ффупк уфкп фук пфукп уфк фук фукпфук фукпфу', '!.png', 0);
+(93, 'Песочное с джемом', 'Песочное с джемом 123', 2, 25, 2, '', 'песочное.png', 0);
 
 -- --------------------------------------------------------
 
@@ -289,69 +334,6 @@ CREATE TABLE IF NOT EXISTS `product_option_rel` (
   `product_option_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=93 DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `qty_preset`
---
-
-DROP TABLE IF EXISTS `qty_preset`;
-CREATE TABLE IF NOT EXISTS `qty_preset` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `qty_preset`
---
-
-INSERT INTO `qty_preset` (`id`, `name`) VALUES
-(1, 'По умолчанию');
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `qty_rel`
---
-
-DROP TABLE IF EXISTS `qty_rel`;
-CREATE TABLE IF NOT EXISTS `qty_rel` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `qty_preset_id` int(11) NOT NULL,
-  `qty_value_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `qty_rel`
---
-
-INSERT INTO `qty_rel` (`id`, `qty_preset_id`, `qty_value_id`) VALUES
-(1, 1, 1),
-(2, 1, 2);
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `qty_value`
---
-
-DROP TABLE IF EXISTS `qty_value`;
-CREATE TABLE IF NOT EXISTS `qty_value` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `value` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `qty_value`
---
-
-INSERT INTO `qty_value` (`id`, `value`) VALUES
-(1, 450),
-(2, 2000);
 
 -- --------------------------------------------------------
 
