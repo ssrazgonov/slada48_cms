@@ -18,6 +18,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'vendor_code')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($product_option, 'product_option_id')->listBox(\yii\helpers\ArrayHelper::map($options, 'id', 'description'),
+        ['multiple' => 'true'])
+        ->label('Опции товара')?>
+
     <?= $form->field($model, 'cat_id')->listBox(\yii\helpers\ArrayHelper::map($categories, 'id', 'title')) ?>
 
     <?= $form->field($model, 'price')->textInput() ?>

@@ -35,6 +35,7 @@ class Page extends \yii\db\ActiveRecord
             [['content'], 'string'],
             [['parent_id', 'sort'], 'integer'],
             [['title', 'keywords', 'description'], 'string', 'max' => 255],
+            ['page_slug', 'unique']
         ];
     }
 
@@ -52,5 +53,10 @@ class Page extends \yii\db\ActiveRecord
             'parent_id' => 'ID родительской категории',
             'sort' => 'Сортировка внутри категории',
         ];
+    }
+
+    public function getPageCategory()
+    {
+        return $this->hasOne(PageCategory::className(), ['id' => 'parent_id']);
     }
 }

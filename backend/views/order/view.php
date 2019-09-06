@@ -30,13 +30,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'user_id',
-            'status',
+                        [
+                'attribute' => 'status',
+                'format' => 'html',
+                'value' => function ($data) {
+                    return "<span style='color: {$data->orderStatus->color}'>{$data->orderStatus->name}</span>";
+                }
+            ],
             'created_at',
-            'updated_at',
-            'amount',
-            'payment_mehtod',
-            'note:ntext',
         ],
     ]) ?>
 

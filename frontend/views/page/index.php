@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+$this->title = Yii::$app->settings->set->title . " | " . $page->title;
 ?>
 <main class="container">
     <div class="row">
@@ -12,10 +13,15 @@ use yii\helpers\Html;
 
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pt-5">
             <div class="card mb-2">
-                <ul class="list-group list-group-flush">
+                <ul class="list-group list-group-flush category-card-list">
                     <?php foreach ($pagesInCategory as $page): ?>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <?= Html::a($page->title , ['page/index', 'id' => $page->id], ['class' => 'text-success']) ?>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center<?=
+                        ('/'.Yii::$app->request->pathInfo ==
+                            \yii\helpers\Url::to(['page/index', 'id' => $page->page_slug ?? $page->id])) ?
+                            ' active' : ''
+                            ?>">
+                            <?= Html::a($page->title , ['page/index', 'id' => $page->page_slug ?? $page->id], ['class' => 'text-success']) ?>
                         </li>
                     <?php endforeach; ?>
                 </ul>

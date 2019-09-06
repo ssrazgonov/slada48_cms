@@ -1,21 +1,22 @@
+<?php
+$this->title = Yii::$app->settings->set->title . " | " . 'Просмотр заказа';
+?>
+
 <main class="container">
     <div class="row">
-        <div class="col-mg-4">
-            <div class="card mb-2">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between align-items-center"><a href="" class="text-success">Редактирование профиля</a></li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center"><a href="" class="text-success">Мои заказы</a></li>
-                    <!-- <span class="badge badge-primary badge-pill">14</span> -->
-                </ul>
+        <div class="col-md-4">
+            <h1 class="mt-4">Личный кабинет</h1>
+            <div class="card mb-2 mb-2 mt-5">
+                <?= $this->render('_left') ?>
             </div>
         </div>
-        <div class="col-lg-8">
-            <h1>
+        <div class="col-lg-8 mt-4">
+            <h2>
                 Заказ номер: <?= $order->id ?>
-            </h1>
+            </h2>
 
-            <div class="alert alert-light order-step mt-3 mb-3" role="alert">
-                <h3>Состав заказа: на сумму <?= $order->amount?> руб.</h3>
+            <div class="alert alert-light order-step mt-5 mb-3" role="alert">
+                <h3>Состав заказа:</h3>
             </div>
 
             <table class="cart-table mb-2 mt-5">
@@ -35,7 +36,7 @@
                 <?php $sum = 0; $i = 1; foreach ($order->orderProduct as $product): ?>
                     <tr>
                         <th><?= $i++ ?></th>
-                        <td><img src="<?= $product->product['prod_img'] ?>" alt="<?= $product->product['title'] ? $product->product['title'] : $product->product['vendor_code'] ?>" class="cart-img"></td>
+                        <td><img src="/upload/product/<?=$product->product->id?>/<?= $product->product['prod_img'] ?>" alt="<?= $product->product['title'] ? $product->product['title'] : $product->product['vendor_code'] ?>" class="cart-img"></td>
                         <td><?= $product->product['vendor_code'] ? $product->product['vendor_code'].'</br>' : ""  ?> <?= $product->product['title'] ?></td>
                         <td><?= $product->product_option ? $product->product_option : '' ?></td>
                         <td><?= $product->quantity ?> <?= $product->product->price_type_id === '1' ? 'грамм': 'шт.'?></td>
@@ -45,6 +46,10 @@
                 <?php endforeach; ?>
                 </tbody>
             </table>
+
+            <div class="alert alert-light order-step mt-5 mb-5" role="alert">
+                <h3>На сумму <?= $order->amount?> руб.</h3>
+            </div>
 
         </div>
     </div>

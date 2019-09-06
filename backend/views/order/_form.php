@@ -12,9 +12,9 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
+    <?= $form->field($model, 'user_id')->dropDownList(\yii\helpers\ArrayHelper::map($users, 'id', 'email'))->label('Покупатель') ?>
 
-    <?= $form->field($model, 'status')->textInput() ?>
+    <?= $form->field($model, 'status')->listBox(\yii\helpers\ArrayHelper::map($orderStatuses, 'id', 'name')) ?>
 
     <?= $form->field($model, 'created_at')->textInput() ?>
 
@@ -22,7 +22,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'amount')->textInput() ?>
 
-    <?= $form->field($model, 'payment_mehtod')->textInput() ?>
+    <?= $form->field($model, 'payment_method')->listBox(\yii\helpers\ArrayHelper::map($paymentMethods, 'id', 'title'))?>
+
+    <?= $form->field($model, 'note')->textarea()->label('Комментарий к заказу') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>

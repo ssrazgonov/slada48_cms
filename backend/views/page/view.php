@@ -33,9 +33,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'keywords',
             'description:ntext',
-            'content:ntext',
-            'parent_id',
+            [
+                'attribute' => 'parent_id',
+                'value' => function($data){
+                    return $data->pageCategory ? $data->pageCategory->title : 'НЕТ';}
+            ],
             'sort',
+            'content:html',
         ],
     ]) ?>
 

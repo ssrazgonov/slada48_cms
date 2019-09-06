@@ -13,6 +13,9 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        'settings' => [
+            'class' => '\common\components\Settings'
+        ],
         'request' => [
             'baseUrl' => '',
             'csrfParam' => '_csrf-frontend',
@@ -43,9 +46,16 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                "page/<id:\w+>" => 'page/index'
             ],
         ],
 //        */
     ],
+    'modules' => [
+            'gii' => [
+        'class' => 'yii\gii\Module',
+        'allowedIPs' => ['*'] // adjust this to your needs
+    ],
+        ],
     'params' => $params,
 ];

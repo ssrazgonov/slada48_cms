@@ -18,10 +18,12 @@ class ProductController extends Controller
 
         $category = ProductCategory::find()->where(['id' => $product->cat_id])->limit(1)->one();
 
+        $categories = ProductCategory::find()->all();
+
         $products = Product::find()
             ->where(['cat_id' => $product->cat_id])
             ->all();
 
-        return $this->render('index', compact('products', 'product', 'category'));
+        return $this->render('index', compact('products', 'product', 'category', 'categories'));
     }
 }

@@ -1,6 +1,8 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\Auction;
+use common\models\Page;
 use common\models\ProductCategory;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
@@ -78,8 +80,12 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $categories = ProductCategory::find()->all();
+        $menu_items = \common\models\MenuItem::find()->where(['menu_id' => 1])->all();
+        $site_inform = Page::findOne(4);
+        $auction = Auction::find()->where(['active' => Auction::$STATUS_ACTIVE ])->one();
+        $active = !(time() >= strtotime($auction->end_date));
 
-		return $this->render('index', compact('categories'));
+		return $this->render('index', compact('categories', 'menu_items', 'site_inform', 'auction', 'active'));
     }
 
     /**

@@ -12,9 +12,10 @@ use yii\helpers\Url;
 <div class="product-form">
 
 
-
-    <div>
-        <img src="/upload/product/<?= $model->id ?>/<?= $model->prod_img ?>" alt="">
+    <div class="row">
+        <div class="col-xs-3">
+            <img class="img-thumbnail" src="/upload/product/<?= $model->id ?>/<?= $model->prod_img ?>" alt="">
+        </div>
     </div>
 
     <?php $form = ActiveForm::begin(['action' => ['product/update-image', 'id' => $model->id]]); ?>
@@ -32,6 +33,22 @@ use yii\helpers\Url;
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'vendor_code')->textInput(['maxlength' => true]) ?>
+
+    <?php
+        $find = [];
+
+        foreach ($filledOptions as $item) {
+            if ($model->id == $item->product_id) {
+                $find[] = $item->product_option_id;
+            }
+        }
+
+        $product_option->product_option_id = $find;
+    ?>
+
+    <?= $form->field($product_option, 'product_option_id')->listBox(\yii\helpers\ArrayHelper::map($options, 'id', 'description'),
+        ['multiple' => 'true'])
+    ->label('Опции товара')?>
 
     <?= $form->field($model, 'cat_id')->listBox(\yii\helpers\ArrayHelper::map($categories, 'id', 'title')) ?>
 

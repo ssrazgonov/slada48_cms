@@ -13,7 +13,7 @@ use Yii;
  * @property string $created_at
  * @property string $updated_at
  * @property double $amount
- * @property int $payment_mehtod
+ * @property int $payment_method
  */
 class Order extends \yii\db\ActiveRecord
 {
@@ -31,7 +31,7 @@ class Order extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'status', 'payment_mehtod'], 'integer'],
+            [['user_id', 'status', 'payment_method'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
             [['amount'], 'number'],
         ];
@@ -49,12 +49,28 @@ class Order extends \yii\db\ActiveRecord
             'created_at' => 'Когда создан',
             'updated_at' => 'Когда редактировался',
             'amount' => 'Общая сумма заказа',
-            'payment_mehtod' => 'Выбранный метод оплаты',
+            'payment_method' => 'Выбранный метод оплаты',
         ];
     }
 
     public function getOrderProduct()
     {
         return $this->hasMany(OrderProduct::className(), ['order_id' => 'id']);
+    }
+
+    public function getOrderStatus()
+    {
+        return $this->hasOne(OrderStatus::className(), ['code' => 'status']);
+
+    }
+
+    public function getPaymentMethod()
+    {
+        return $this->hasOne(PaymentMehtod::className(), ['id' => 'payment_method']);
+    }
+
+    public function getUser()
+    {
+        return $this->hasOne(User::className(),['id' => 'user_id']);
     }
 }

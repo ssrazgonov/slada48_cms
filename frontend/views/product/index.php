@@ -1,5 +1,7 @@
 <?php
 use yii\helpers\Url;
+
+$this->title = Yii::$app->settings->set->title . " | " . $product->category->title . ' | ' . $product->title;
 ?>
 
 <main class="container-fluid">
@@ -17,8 +19,7 @@ use yii\helpers\Url;
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="cake-description">
-                            <h1 class="border-bottom border-dark pb-2"><?= $product->title ?></h1>
-                            <p><?= $product->description ?></p>
+                            <h1 class="border-bottom border-dark pb-2"><?php echo !empty($product->title) ? $product->title : $product->vendor_code ?></h1>
                             <p>Арт. <?= $product->vendor_code ?></p>
                             <?php if($product->price_type_id === 1): ?>
                                 <p><span>Цена за 1000 грамм: </span><strong> <?= $product->price ?> руб.</strong></p>
@@ -61,7 +62,7 @@ use yii\helpers\Url;
                                 <div class="col-2 p-1">
                                     <label class="cake-filling-lbl">
                                         <input class="cake-filling-radio" data-target="<?= $option->id ?>" type="radio" name="product_option" value="<?= $option->id ?>">
-                                        <img src="<?= $option->img ?>" class="w-100" title="<?= $option->description ?>">
+                                        <img src="/upload/option/<?= $option->id ?>/<?= $option->img ?>" class="w-100" title="<?= $option->description ?>">
                                     </label>
                                 </div>
                             <?php endforeach; ?>
@@ -103,12 +104,13 @@ use yii\helpers\Url;
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pt-5">
             <div class="card mb-2">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between align-items-center"><h4><?= $category->title ?></h4></li>
-
-                    <?php foreach ($products as $product): ?>
-                        <li class="list-group-item d-flex justify-content-between align-items-center"><a href="<?= \yii\helpers\Url::to(['product/index', 'id' => $product->id]) ?>" class="text-success"><?= $product->title ?></a></li>
+                    <?php foreach ($categories as $cat):?>
+                        <?php if ($cat->cat_slug == 'custom'): ?>
+                            <li class="list-group-item d-flex justify-content-between align-items-center"><?= \yii\helpers\Html::a($cat['title'], ['custom/index']) ?></li>
+                        <?php else: ?>
+                            <li class="list-group-item d-flex justify-content-between align-items-center"><?= \yii\helpers\Html::a($cat['title'], ['category/show', 'id' => $cat['id']]) ?><span class="badge badge-primary badge-pill"><?= $cat->productCount ?></span></li>
+                        <?php endif; ?>
                     <?php endforeach; ?>
-                    <li class="list-group-item d-flex justify-content-between align-items-center"><a href="<?= \yii\helpers\Url::to(['category/show', 'id' => $category->id]) ?>" class="text-primary">Все торты категории -></a></li>
                 </ul>
             </div>
         </div>

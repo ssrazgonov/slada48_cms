@@ -4,6 +4,7 @@
 /* @var $content string */
 
 use backend\assets\AppAsset;
+use vova07\imperavi\bundles\ImageManagerAsset;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
@@ -11,6 +12,7 @@ use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
 AppAsset::register($this);
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -55,6 +57,7 @@ AppAsset::register($this);
 
 <div class="container-fluid">
     <div class="row">
+        <?php if (!Yii::$app->user->isGuest) : ?>
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
                 <li class="<?= Yii::$app->getRequest()->pathInfo == 'order/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['order/index']) ?>">Управление заказами</a></li>
@@ -64,16 +67,30 @@ AppAsset::register($this);
             <ul class="nav nav-sidebar">
                 <li class="<?= Yii::$app->getRequest()->pathInfo == 'product-category/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['product-category/index']) ?>">Категории товаров</a></li>
                 <li class="<?= Yii::$app->getRequest()->pathInfo == 'product/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['product/index']) ?>">Товары</a></li>
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'product-option/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['product-option/index']) ?>">Опции</a></li>
 
             </ul>
             <ul class="nav nav-sidebar">
                 <li class="<?= Yii::$app->getRequest()->pathInfo == 'page-category/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['page-category/index']) ?>">Разделы</a></li>
                 <li class="<?= Yii::$app->getRequest()->pathInfo == 'page/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['page/index']) ?>">Страницы сайта</a></li>
             </ul>
+
+            <ul class="nav nav-sidebar">
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'menu/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['menu/index']) ?>">Меню</a></li>
+            </ul>
+
+            <ul class="nav nav-sidebar">
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'auction/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['auction/index']) ?>">Аукцион</a></li>
+                <li class="<?= Yii::$app->getRequest()->pathInfo == 'bid/index' ? 'active' : '' ?>"><a href="<?= \yii\helpers\Url::to(['bid/index']) ?>">Ставки</a></li>
+            </ul>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+        <?php endif; ?>
+
+        <div class="<?= Yii::$app->user->isGuest ? 'col-xs-12' : 'col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main' ?>">
             <?= $content ?>
         </div>
+
     </div>
 </div>
 

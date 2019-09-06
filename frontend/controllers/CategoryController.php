@@ -7,36 +7,35 @@ namespace frontend\controllers;
 use common\models\Product;
 use common\models\ProductCategory;
 use yii\web\Controller;
+use yii\data\Pagination;
 
 class CategoryController extends Controller
 {
     public function actionIndex($order = 'price') {
 
 
-        $categories = ProductCategory::find()->asArray()->all();
-
-        foreach ($categories as &$cat) {
-            $cat['prod_count'] = Product::find()->where(['cat_id' => $cat['id']])->count();
-            $cat['products'] = Product::find()->where(['cat_id' => $cat['id']])->limit(4)->orderBy($order)->all();
-        }
+        $categories = ProductCategory::find()->all();
 
         return $this->render('index', compact('products', 'categories'));
     }
 
     public function actionShow($id) {
 
-        $category = ProductCategory::find()->where(['id'=> $id])->all();
+        $category = ProductCategory::find()->andWhere(['id'=> $id])->all();
 
-        $products = Product::find()
-            ->where(['cat_id' => $id])
+
+
+        $query = Product::find()
+            ->andWhere(['cat_id' => $id])
+            ->andWhere(['active' => 1]);
+
+        $pages = new Pagination(['totalCount' => $query->count()]);
+        $products = $query->offset($pages->offset)
+            ->limit(12)
             ->all();
 
-        $categories = ProductCategory::find()->asArray()->all();
+        $categories = ProductCategory::find()->all();
 
-        foreach ($categories as &$cat) {
-            $cat['prod_count'] = Product::find()->where(['cat_id' => $cat['id']])->count();
-        }
-
-        return $this->render('show', compact('products', 'categories', 'category'));
+        return $this->render('show', compact('products', 'categories', 'category', 'pages'));
     }
 }

@@ -19,7 +19,7 @@ class m190625_123611_create_order_table extends Migration
             'created_at' => $this->timestamp(),
             'updated_at' => $this->timestamp(),
             'amount' => $this->float(),
-            'payment_mehtod' => $this->integer()->defaultValue(1),
+            'payment_method' => $this->integer()->defaultValue(1),
         ]);
 
         $this->createTable('{{%order_product}}', [
@@ -30,7 +30,7 @@ class m190625_123611_create_order_table extends Migration
             'price' => $this->float(),
         ]);
 
-        $this->createTable('{{%payment_mehtod}}', [
+        $this->createTable('{{%payment_method}}', [
             'id' => $this->primaryKey(),
             'title' => $this->string(),
         ]);

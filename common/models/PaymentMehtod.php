@@ -5,7 +5,7 @@ namespace common\models;
 use Yii;
 
 /**
- * This is the model class for table "payment_mehtod".
+ * This is the model class for table "payment_method".
  *
  * @property int $id
  * @property string $title
@@ -17,7 +17,7 @@ class PaymentMehtod extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'payment_mehtod';
+        return 'payment_method';
     }
 
     /**

@@ -16,6 +16,10 @@ $this->params['breadcrumbs'][] = 'Редактирование заказа';
 
     <?= $this->render('_form', [
         'model' => $model,
+        'paymentMethods' => $paymentMethods,
+        'orderStatuses' => $orderStatuses,
+        'orderStatus' => $orderStatus,
+        'users' => $users,
     ]) ?>
 
 </div>

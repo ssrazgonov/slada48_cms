@@ -284,3 +284,139 @@ a:hover{
     border-bottom: 1px black solid;
     padding: 10px 10px;
 }
+.logout {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border: none;
+}
+.secondary-menu{
+    position:absolute;
+    top: 80%;
+    background: #343a40;
+    display:none;
+    min-width:250%;
+}
+.d-or-not{
+    position:relative;
+}
+.d-or-not:hover .secondary-menu{
+    display:block;
+}
+.category-card-list li.active {
+    background-color: #28a745;
+    border: none;
+}
+.category-card-list li.active a {
+    color: #fff!important;
+}
+
+.auction-product-img img {
+    max-width: 100%;
+}
+
+.auction-product {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bids {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#time-down-counter .item-counter-down-0 {
+    position: relative;
+}
+#time-down-counter .item-counter-down-0:after {
+    content: "Дней";
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: #000;
+}
+
+#time-down-counter .item-counter-down-1 {
+    position: relative;
+}
+#time-down-counter .item-counter-down-1:after {
+    content: "Часов";
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: #000;
+}
+
+#time-down-counter .item-counter-down-2 {
+    position: relative;
+}
+#time-down-counter .item-counter-down-2:after {
+    content: "Минут";
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: #000;
+}
+
+#time-down-counter .item-counter-down-3 {
+    position: relative;
+}
+#time-down-counter .item-counter-down-3:after {
+    content: "Секунд";
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: #000;
+}
+
+
+.catOnMain-title {
+    font-size: 18px;
+}
+
+.catOnMain-item .card-body {
+    padding: 15px 5px;
+}
+
+.catOnMain-item img {
+    min-height: 285px;
+}
+.onMain .item-counter-down {
+    font-size: 18px!important;
+
+}
+.onMain .item-counter-down>span{
+    font-size: 18px;!important;
+}
+
+.categoryOnMain img {
+    object-fit: cover;
+    height: 265px;
+}
+
+.categoryOnMain .card-body {
+    padding: 10px 8px;
+}
+
+.categoryOnMain .card-title {
+    font-size: 18px;
+}
+
+.categoryIn img {
+    height: 400px;
+    object-fit: cover;
+}

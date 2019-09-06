@@ -2,9 +2,11 @@
 
 namespace backend\controllers;
 
+use common\models\PageCategory;
 use Yii;
 use common\models\Page;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -20,11 +22,70 @@ class PageController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['login', 'error'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' =>
+                            [
+                                'index',
+                                'view',
+                                'delete',
+                                'create',
+                                'update',
+                                'files-get',
+                                'file-upload',
+                                'images-get',
+                                'file-delete',
+                                'image-upload'
+                            ],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
                 ],
+            ],
+        ];
+    }
+
+    public function actions()
+    {
+        return [
+            'files-get' => [
+                'class' => 'vova07\imperavi\actions\GetFilesAction',
+                'url' => '/upload/images/', // Directory URL address, where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
+            ],
+            'file-upload' => [
+                'class' => 'vova07\imperavi\actions\UploadFileAction',
+                'url' => '/upload/images/', // Directory URL address, where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
+                'uploadOnlyImage' => false, // For any kind of files uploading.
+            ],
+            'file-delete' => [
+                'class' => 'vova07\imperavi\actions\DeleteFileAction',
+                'url' => '/upload/images/', // Directory URL address, where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
+            ],
+            'images-get' => [
+                'class' => 'vova07\imperavi\actions\GetImagesAction',
+                'url' => '/upload/images/', // Directory URL address, where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
+                'options' => ['only' => ['*.jpg', '*.jpeg', '*.png', '*.gif', '*.ico']], // These options are by default.
+            ],
+            'image-upload' => [
+                'class' => 'vova07\imperavi\actions\UploadFileAction',
+                'url' => '/upload/images/', // Directory URL address, where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
             ],
         ];
     }
@@ -65,6 +126,8 @@ class PageController extends Controller
     public function actionCreate()
     {
         $model = new Page();
+        $categories = PageCategory::find()->asArray()->all();
+        $categories[] = ['id' => 0, 'title' => 'НЕТ'];
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -72,6 +135,7 @@ class PageController extends Controller
 
         return $this->render('create', [
             'model' => $model,
+            'categories' => $categories
         ]);
     }
 
@@ -85,6 +149,7 @@ class PageController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $categories = PageCategory::find()->asArray()->all();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -92,6 +157,7 @@ class PageController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            'categories' => $categories
         ]);
     }
 

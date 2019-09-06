@@ -8,7 +8,7 @@ use Yii;
  * This is the model class for table "menu_item".
  *
  * @property int $id
- * @property string $label
+ * @property string $name
  * @property string $url
  * @property int $parent_id
  * @property int $menu_id
@@ -30,7 +30,9 @@ class MenuItem extends \yii\db\ActiveRecord
     {
         return [
             [['parent_id', 'menu_id'], 'integer'],
-            [['label', 'url'], 'string', 'max' => 255],
+            [['name'], 'string', 'max' => 100],
+            [['name', 'url'], 'required',],
+            [['url'], 'string', 'max' => 255],
         ];
     }
 
@@ -41,7 +43,7 @@ class MenuItem extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'label' => 'Label',
+            'name' => 'Name',
             'url' => 'Url',
             'parent_id' => 'Parent ID',
             'menu_id' => 'Menu ID',

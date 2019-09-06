@@ -29,6 +29,7 @@ class ProductOption extends \yii\db\ActiveRecord
     {
         return [
             [['description'], 'string'],
+            [['vendor_code'], 'unique'],
             [['title', 'img'], 'string', 'max' => 255],
         ];
     }

@@ -13,7 +13,7 @@ class UploadImage extends Model{
 
     public function rules(){
         return[
-            [['image'], 'file', 'extensions' => 'png, jpg'],
+//            [['image'], 'file', 'extensions' => 'png, jpg'],
             [['image'], 'required'],
         ];
     }

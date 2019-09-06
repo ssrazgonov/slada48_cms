@@ -27,7 +27,8 @@ class ProductOptionRel extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_id', 'product_option_id'], 'integer'],
+            [['product_id'], 'integer'],
+            [['product_option_id'], 'safe'],
         ];
     }
 

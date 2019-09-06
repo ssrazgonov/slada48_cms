@@ -18,7 +18,10 @@ $this->params['breadcrumbs'][] = 'Update';
         'model' => $model,
         'uploadImage' => $uploadImage,
         'categories' => $categories,
-        'priceType' => $priceType
+        'priceType' => $priceType,
+        'options' => $options,
+        'product_option' => $product_option,
+        'filledOptions' => $filledOptions
     ]) ?>
 
 </div>

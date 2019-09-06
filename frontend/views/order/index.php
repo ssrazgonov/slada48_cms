@@ -1,3 +1,6 @@
+<?php
+$this->title = Yii::$app->settings->set->title . " | " . 'Оформление заказа';
+?>
 
 <main class="container">
     <h1 class="mt-5 mb-5">Оформление заказа</h1>
@@ -26,7 +29,7 @@
         $sum = 0; $i = 1; foreach ($productsInCart as $product): ?>
             <tr>
                 <th><?= $i++ ?></th>
-                <td><img src="<?= $product['product']['prod_img'] ?>" alt="<?= $product['product']['title'] ? $product['product']['title'] : $product['product']['vendor_code'] ?>" class="cart-img"></td>
+                <td><img src="/upload/product/<?= $product['product']['id']?>/<?= $product['product']['prod_img'] ?>" alt="<?= $product['product']['title'] ? $product['product']['title'] : $product['product']['vendor_code'] ?>" class="cart-img"></td>
                 <td><?= $product['product']['vendor_code'] ? $product['product']['vendor_code'].'</br>' : ""  ?> <?= $product['product']['title'] ?></td>
                 <td><?= $product['option'] ? $product['option']['description'] : '' ?></td>
 

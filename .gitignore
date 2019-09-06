@@ -35,9 +35,14 @@ phpunit.phar
 /.vagrant
 
 # ignore generated files
+/frontend/web/runtime
+/frontend/web/assets
+/frontend/web/upload
 /frontend/web/index.php
 /frontend/web/index-test.php
 /frontend/web/robots.txt
 /backend/web/index.php
 /backend/web/index-test.php
 /backend/web/robots.txt
+/backend/web/runtime
+/backend/web/assets

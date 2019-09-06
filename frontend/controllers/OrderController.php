@@ -68,7 +68,7 @@ class OrderController extends \yii\web\Controller
 
         $order->user_id = $user_id;
         $order->amount = $amount;
-        $order->payment_mehtod = $payment_method;
+        $order->payment_method = $payment_method;
         $order->note = $note;
 
         if ($order->save()) {

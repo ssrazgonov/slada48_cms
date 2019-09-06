@@ -13,9 +13,14 @@ class PageController extends Controller
 {
     public function actionIndex($id)
     {
-        $page = Page::find()
-            ->where(['id' => $id])
-            ->one();
+        $page =
+            (Page::find()
+                ->where(['id' => $id])
+                ->one())
+                            ??
+            (Page::find()
+                ->where(['page_slug' => $id])
+                ->one());
 
         if (!$page) {
             return $this->goHome();

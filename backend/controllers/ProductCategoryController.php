@@ -6,6 +6,7 @@ use backend\models\UploadImage;
 use Yii;
 use common\models\ProductCategory;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -22,6 +23,20 @@ class   ProductCategoryController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['login', 'error'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => ['index', 'view', 'delete', 'update', 'create', 'update-image'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -119,6 +134,8 @@ class   ProductCategoryController extends Controller
             }
             return $this->redirect(['update', 'id' => $model->id]);
         }
+
+
 
         return $this->redirect(['update', 'id' => $model->id]);
     }

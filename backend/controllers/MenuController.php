@@ -2,9 +2,11 @@
 
 namespace backend\controllers;
 
+use common\models\MenuItem;
 use Yii;
 use common\models\Menu;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -20,6 +22,20 @@ class MenuController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['login', 'error'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => ['index', 'view', 'create', 'delete', 'update', 'add-item', 'update-item' , 'delete-item'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -85,6 +101,10 @@ class MenuController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        
+        $menu_items = \common\models\MenuItem::find()->where(["menu_id" => $id])->all();
+
+        $menu_item = new MenuItem();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -92,7 +112,42 @@ class MenuController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            'menu_items' => $menu_items,
+            'menu_item' => $menu_item
         ]);
+    }
+
+    public function actionAddItem()
+    {
+        $model = new MenuItem();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['update', 'id' => $model->menu_id]);
+        }
+
+    }
+
+    public function actionUpdateItem($id)
+    {
+        $model = MenuItem::findOne($id);
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['update', 'id' => $model->menu_id]);
+        }
+
+    }
+
+
+    public function actionDeleteItem($id)
+    {
+        $model = MenuItem::findOne($id);
+
+        $url_back = $model->menu_id;
+
+        $model->delete();
+
+        return $this->redirect(['update', 'id' => $url_back]);
+
     }
 
     /**

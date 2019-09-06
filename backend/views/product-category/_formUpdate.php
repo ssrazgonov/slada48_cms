@@ -10,9 +10,12 @@ use yii\widgets\ActiveForm;
 
 <div class="product-category-form">
 
-    <div>
-        <img src="/upload/category/<?= $model->id ?>/<?= $model->cat_img ?>" alt="">
+    <div class="row">
+        <div class="col-xs-3">
+            <img class="img-thumbnail" src="/upload/category/<?= $model->id ?>/<?= $model->cat_img ?>" alt="">
+        </div>
     </div>
+
 
     <?php $form = ActiveForm::begin(['action' => ['product-category/update-image', 'id' => $model->id]]); ?>
     <?= $form->field($uploadImage, 'image')->fileInput() ?>

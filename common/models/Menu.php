@@ -8,8 +8,7 @@ use Yii;
  * This is the model class for table "menu".
  *
  * @property int $id
- * @property string $menu_name
- * @property string $menu_code
+ * @property string $name
  */
 class Menu extends \yii\db\ActiveRecord
 {
@@ -27,9 +26,8 @@ class Menu extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['menu_code'], 'required'],
-            [['menu_name', 'menu_code'], 'string', 'max' => 255],
-            [['menu_code'], 'unique'],
+            [['name'], 'required'],
+            [['name'], 'string', 'max' => 100],
         ];
     }
 
@@ -40,8 +38,7 @@ class Menu extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'menu_name' => 'Menu Name',
-            'menu_code' => 'Menu Code',
+            'name' => 'Name',
         ];
     }
 }

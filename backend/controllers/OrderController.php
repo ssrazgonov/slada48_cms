@@ -2,9 +2,13 @@
 
 namespace backend\controllers;
 
+use common\models\OrderStatus;
+use common\models\PaymentMehtod;
+use common\models\User;
 use Yii;
 use common\models\Order;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -20,6 +24,20 @@ class OrderController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['login', 'error'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => ['index', 'view', 'delete', 'update', 'create'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -37,6 +55,9 @@ class OrderController extends Controller
     {
         $dataProvider = new ActiveDataProvider([
             'query' => Order::find(),
+            'pagination' => [
+                'pageSize' => 20,
+            ]
         ]);
 
         return $this->render('index', [
@@ -65,6 +86,8 @@ class OrderController extends Controller
     public function actionCreate()
     {
         $model = new Order();
+        $paymentMethods = PaymentMehtod::find()->asArray()->asArray()->all();
+        $orderStatuses = OrderStatus::find()->asArray()->all();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -72,6 +95,8 @@ class OrderController extends Controller
 
         return $this->render('create', [
             'model' => $model,
+            'paymentMethods' => $paymentMethods,
+            'orderStatuses' => $orderStatuses,
         ]);
     }
 
@@ -85,6 +110,10 @@ class OrderController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $paymentMethods = PaymentMehtod::find()->asArray()->all();
+        $orderStatuses = OrderStatus::find()->asArray()->all();
+        $orderStatus = OrderStatus::find()->where(['code' => $model->status])->asArray()->all();
+        $users = User::find()->asArray()->all();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -92,6 +121,10 @@ class OrderController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            'paymentMethods' => $paymentMethods,
+            'orderStatuses' => $orderStatuses,
+            'orderStatus' => $orderStatus,
+            'users' => $users,
         ]);
     }
 

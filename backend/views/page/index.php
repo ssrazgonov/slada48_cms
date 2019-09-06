@@ -25,10 +25,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'title',
-            'keywords',
-            'description:ntext',
-            'content:ntext',
-            //'parent_id',
+//            'keywords',
+//            'description:ntext',
+//            'content:html',
+            [
+                'attribute' => 'parent_id',
+                'value' => function($data){
+                    return $data->pageCategory ? $data->pageCategory->title : 'НЕТ';}
+            ],
             //'sort',
 
             ['class' => 'yii\grid\ActionColumn'],

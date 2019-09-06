@@ -11,6 +11,7 @@ use frontend\assets\AppAsset;
 use common\widgets\Alert;
 use yii\helpers\Url;
 use frontend\models\Cart;
+use common\components\MainMenuWidget;
 
 $userCart = Yii::$app->session->get('cart') ? Yii::$app->session->get('cart') : [];
 
@@ -35,29 +36,17 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 <header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-			<a class="navbar-brand" href="#"><img src="/img/logo.png" alt="Слада - торты на заказ в липецке" style="height: 45px"></a>
+			<a class="navbar-brand" href="/"><img src="/img/logo.png" alt="Слада - торты на заказ в липецке" style="height: 45px"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="/?r=page/index&id=1">О фабрике</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Информация</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Торты</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Акции</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">контакты</a>
-					</li>
+				    <?= MainMenuWidget::widget(['id' => 1]); ?>
 				</ul>
+				
 				<ul class="navbar-nav">
 					<li class="nav-item">
 						<a class="nav-link" href=""><i class="fa fa-search"></i></a>
@@ -71,10 +60,12 @@ AppAsset::register($this);
 							<a class="nav-link" href="<?= Url::to(['site/login']); ?>"><i class="fa fa-sign-in-alt"></i> Вход</a>
 						</li>
 					<?php else : ?>
-						<li class="nav-item">
-							<a class="nav-link" href=""><i class="far fa-user"></i> <?= Yii::$app->user->identity->username ?></a>
-							<ul>
-								<li><a href="<?= Url::to(['personal/index']); ?>">Личный кабинет</a></li>
+						<li class="nav-item d-or-not">
+							<a class="nav-link" href="">
+							    <i class="far fa-user"></i> <?= Yii::$app->user->identity->username ?></a>
+							<ul class="navbar-nav secondary-menu">
+								<li class="nav-item"><a href="<?= Url::to(['personal/index']); ?>" class="nav-link">Личный кабинет</a></li>
+								<li class="nav-item"><a href="<?= Url::to(['personal/index']); ?>" class="nav-link">Управление заказами</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
@@ -82,7 +73,7 @@ AppAsset::register($this);
 								<?=Html::beginForm(['/site/logout'], 'post') ?>
 								<i class="fas fa-door-open"></i><?= Html::submitButton(
 										'Выход',
-										['class' => 'btn btn-link logout']) ?>
+										['class' => 'logout']) ?>
 								<?=	Html::endForm() ?>
 							</a>
 							
@@ -105,21 +96,7 @@ AppAsset::register($this);
 		<div class="container-fluid">
 			<div class="row">
 				<ul class="col-md-4 list-unstyled">
-					<li class="p-1">
-						<a class="text-white" href="#">О фабрике</a>
-					</li>
-					<li class="p-1">
-						<a class="text-white" href="#">Информация</a>
-					</li>
-					<li class="p-1">
-						<a class="text-white" href="#">Торты</a>
-					</li>
-					<li class="p-1">
-						<a class="text-white" href="#">Акции</a>
-					</li>
-					<li class="p-1">
-						<a class="text-white" href="#">контакты</a>
-					</li>
+                    <?= MainMenuWidget::widget(['id' => 1, 'tpl' => 'bot']); ?>
 				</ul>
 				<div class="social col-md-4 text-white">
 					<p>Следуйте за нами:</p>

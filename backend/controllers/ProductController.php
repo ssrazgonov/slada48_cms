@@ -5,9 +5,12 @@ namespace backend\controllers;
 use common\models\Category;
 use common\models\PriceType;
 use common\models\ProductCategory;
+use common\models\ProductOption;
+use common\models\ProductOptionRel;
 use Yii;
 use common\models\Product;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -25,6 +28,20 @@ class ProductController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['login', 'error'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => ['index', 'view', 'delete', 'update', 'create', 'update-image'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -72,6 +89,8 @@ class ProductController extends Controller
         $model = new Product();
         $categories = ProductCategory::find()->asArray()->all();
         $priceType = PriceType::find()->asArray()->all();
+        $options = ProductOption::find()->asArray()->all();
+        $product_option = new ProductOptionRel();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
@@ -79,16 +98,37 @@ class ProductController extends Controller
             $uploadImage->image = UploadedFile::getInstance($model, 'prod_img');
 
             $model->prod_img = $uploadImage->upload("product/$model->id/");
-            $model->save();
+
+            if ($model->save()) {
+
+                if (isset(Yii::$app->request->post()['ProductOptionRel']) && !empty(Yii::$app->request->post()['ProductOptionRel']['product_option_id'])) {
+
+                    $productOptionRel['ProductOptionRel'] = Yii::$app->request->post()['ProductOptionRel'];
+                    $productOptionRel['ProductOptionRel']['product_id'] = $model->id;
+
+                    foreach ($productOptionRel['ProductOptionRel']['product_option_id'] as $option) {
+                        $model_option = new ProductOptionRel();
+                        $model_option->product_option_id = $option;
+                        $model_option->product_id = $model->id;
+                        $model_option->save();
+                    }
+
+                }
 
 
-            return $this->redirect(['view', 'id' => $model->id]);
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
+
+
+
         }
 
         return $this->render('create', [
             'model' => $model,
             'categories' => $categories,
-            'priceType' => $priceType
+            'priceType' => $priceType,
+            'options' => $options,
+            'product_option' => $product_option,
         ]);
     }
 
@@ -99,22 +139,55 @@ class ProductController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
+
+    private function clearOptions($id) {
+        $model = ProductOptionRel::find()->where(['product_id' => $id])->all();
+
+        foreach ($model as $item) {
+            $item->delete();
+        }
+    }
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
         $uploadImage = new UploadImage();
         $categories = ProductCategory::find()->asArray()->all();
         $priceType = PriceType::find()->asArray()->all();
+        $options = ProductOption::find()->asArray()->all();
+        $product_option = new ProductOptionRel();
+
+        $filledOptions = ProductOptionRel::find()->where(['product_id' => $model->id])->all();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $this->clearOptions($id);
+
+            if (isset(Yii::$app->request->post()['ProductOptionRel']) && !empty(Yii::$app->request->post()['ProductOptionRel']['product_option_id'])) {
+
+                $productOptionRel['ProductOptionRel'] = Yii::$app->request->post()['ProductOptionRel'];
+                $productOptionRel['ProductOptionRel']['product_id'] = $model->id;
+
+                foreach ($productOptionRel['ProductOptionRel']['product_option_id'] as $option) {
+                    $model_option = new ProductOptionRel();
+                    $model_option->product_option_id = $option;
+                    $model_option->product_id = $model->id;
+                    $model_option->save();
+                }
+
+            }
+
             return $this->redirect(['view', 'id' => $model->id]);
+
         }
 
         return $this->render('update', [
             'model' => $model,
             'uploadImage' => $uploadImage,
             'categories' => $categories,
-            'priceType' => $priceType
+            'priceType' => $priceType,
+            'options' => $options,
+            'product_option' => $product_option,
+            'filledOptions' => $filledOptions
         ]);
     }
 

@@ -22,13 +22,24 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            'id',
+//            'id',
             'username',
 //            'auth_key',
 //            'password_hash',
 //            'password_reset_token',
             'email:email',
-            //'status',
+            [
+                'attribute' => 'status',
+                'label' => 'Статус',
+                'format' => 'html',
+                'value' => function($data) {
+                    switch ($data->status) {
+                        case 10 : return '<span style="color: green">Активен</span>';
+                        case 9 : return '<span style="color: red">Неактивен</span>';
+                        default: return "123";
+                    }
+                }
+            ],
             //'created_at',
             //'updated_at',
             //'verification_token',

@@ -2,88 +2,89 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
-?>
+$this->title = Yii::$app->settings->set->title . ' | ' . $site_inform->title;
+
+use aneeshikmat\yii2\Yii2TimerCountDown\Yii2TimerCountDown; ?>
 
 <div class="container-fluid pt-5 pb-5" style="background: url(img/bg.png) center; background-size: cover; background-color: #ce39b21a;">
     <div class="row">
         <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
             <h1 class="text-white text-center pt-5">Делайте свою жизнь сладкой! Торты на заказ в Липецке</h1>
             <h2 class="text-white text-center pt-5">Потому что мы с вами!</h2>
-            <div class="text-center p-5"><a href="" class="btn btn-success">Действующие Акции</a></div>
+            <div class="text-center p-5"><a href="<?= \yii\helpers\Url::to(['category/show', 'id' => 8]) ?>" class="btn btn-success">Действующие Акции</a></div>
         </div>
+
+        <?php if (!empty($auction)) : ?>
         <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+
             <div class="card bg-light">
-                <h5 class="card-header text-uppercase">Сладкий аукцион</h5>
+                <h5 class="card-header text-uppercase">Сладкий аукцион: <?= $auction->auc_title ?></h5>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                            <img src="img/auc.jpg" alt="" class="w-100">
-                            <p class="text-center text-success">Ставок: 4</p>
+                            <img class="img-responsive img-fluid" src="/upload/auction/<?=$auction->auc_img?>" alt="">
+                            <p class="text-center text-success mt-2">Ставок: <?= count($auction->bids) ?></p>
                         </div>
-                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                        <div id="aucOnMain"class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                            <?php if (!$active): ?>
+                                <div class="auction-time-top alert alert-success text-center">
+                                    <h4 class="alert-heading">Аукцион завершен</h4>
+                                    <hr>
+                                    <?php if($auction->winner): ?>
+                                        <p class="mb-2">Победитель аукциона: <span class="alert-link"><?= $auction->winner->username ?></span></p>
+                                        <p class="mb-0">Окончательная цена: <span class="alert-link"><?= $auction->winBid->bid ?> руб.</span></p>
+                                    <?php endif; ?>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php if ($active): ?>
                             <h5 class="card-title">До окончания аукциона:</h5>
                             <div class="numbers row">
-                                <div class="col-md-3 text-center display-6">2</div>
-                                <div class="col-md-3 text-center display-6">5</div>
-                                <div class="col-md-3 text-center display-6">25</div>
-                                <div class="col-md-3 text-center display-6">55</div>
+                                <div id="time-down-counter" class="onMain">
+                                    <span class="item-counter-down item-counter-down-0">
+                                        <span class="inner-item-counter-down inner-item-counter-down-0">0</span><span class="inner-item-counter-down inner-item-counter-down-1">0</span>
+                                    </span><span class="item-counter-down item-counter-down-1">
+                                        <span class="inner-item-counter-down inner-item-counter-down-0">0</span><span class="inner-item-counter-down inner-item-counter-down-1">0</span>
+                                    </span><span class="item-counter-down item-counter-down-2">
+                                        <span class="inner-item-counter-down inner-item-counter-down-0">0</span><span class="inner-item-counter-down inner-item-counter-down-1">0</span>
+                                    </span><span class="item-counter-down item-counter-down-3">
+                                        <span class="inner-item-counter-down inner-item-counter-down-0">0</span><span class="inner-item-counter-down inner-item-counter-down-1">0</span>
+                                    </span></div>
+<?php
+$callBackScript = <<< JS
+$.get('/auction/get-expired', function(data) {
+$('#aucOnMain').html(data);
+});
+JS;
+?>
+                                <?= Yii2TimerCountDown::widget([
+                                    'countDownDate' => strtotime($auction->end_date) * 1000,
+                                    'countDownResSperator' => '',
+                                    'templateStyle' => 1,
+                                    'countDownOver' => '',
+                                    'callBack' => $callBackScript
+                                ]) ?>
                             </div>
-                            <div class="text row">
-                                <div class="col-md-3 text-center pb-3">Дней</div>
-                                <div class="col-md-3 text-center pb-3">Часов</div>
-                                <div class="col-md-3 text-center pb-3">Минут</div>
-                                <div class="col-md-3 text-center pb-3">Секунд</div>
-                            </div>
-                            <p class="card-text">Купить торт за: <a class="text-success" href="">25 rub</a></p>
+                            <p class="card-text mt-2">Купить торт за: <a class="text-success" href=""><?= $auction->bid_current + $auction->bid_step ?> руб.</a></p>
 
-                            <a href="#" class="btn btn-success mt-2">участвовать</a>
+                            <a href="<?= \yii\helpers\Url::to(['auction/index']) ?>" class="btn btn-success mt-2">участвовать</a>
                             <a href="#" class="btn btn-primary mt-2">Условия участия</a>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="auction">
-    <div class="auction__header">
-        <h3 class="auction__title">СЛАДКИЙ АУКЦИОН</h3>
-    </div>
-
-    <div class="auction__body">
-        <div class="auction__part auction__part_left">
-            <div class="auction__item">
-                <img src="modules/auction/auction__img.jpg" class="auction__img">
-            </div>
-            <div class="auction__rate"></div>
         </div>
-
-        <div class="auction__part auction__part_right">
-            <div class="timer">
-                <div class="timer__title">До окончания аукциона:</div>
-                <div class="timer__counter">
-                    <div class="timer__item timer__days"></div>
-                    <div class="timer__item timer__hours"></div>
-                    <div class="timer__item timer__minutes"></div>
-                    <div class="timer__item timer__seconds"></div>
-                </div>
-            </div>
-
-            <div class="price"></div>
-
-            <div class="bet">
-                <button class="bet_button">Сделать ставку</button>
-            </div>
-        </div>
-    </div>
-</div> -->
-        </div>
+        <?php endif; ?>
     </div>
 </div>
 	
 	<main class="container">
-		<div class="row pb-5">
+		<div class="row pb-5 categoryOnMain">
 
             <?php foreach ($categories as $category): ?>
+
+            <?php if ($category->cat_slug == 'custom') { continue; } ?>
 			<section class="col-lg-3 col-sm-6 pt-5">
 				<a class="card cakes" href="<?= \yii\helpers\Url::to(['category/show', 'id' => $category->id])?>">
 					<img class="card-img-top border-bottom p-3" src="/upload/category/<?=$category->id ?>/<?=$category->cat_img ?>" alt="<?=$category->title ?>">
@@ -95,24 +96,8 @@ $this->title = 'My Yii Application';
             <?php endforeach; ?>
 		</div>
 		<article class="row pb-5">
-			<div class="col-lg-12 text-center p-4">
-				<h2>Информация о нас</h2>
-			</div>
-			<div class="col-lg-5">
-				<img src="img/slada.png" alt="" class="w-100">
-			</div>
-			<div class="col-lg-7">
-				<p>Уже более 15-ти лет мы присутствуем на рынке кондитерских изделий города Липецка и области. За это время продукция с «розовым слоном» успела полюбиться не только жителям Липецкой, но и Тамбовской,  и Воронежской областей.</p>
-
-				<p>Наши торты, пирожные, рулеты, а так же песочная продукция - представлены как во всех крупных федеральных и локальных сетях розничной торговли, так и в небольших частных торговых точках.</p>
-
-				<p>За годы работы фабрики менялся ассортимент и внешний вид продукции, оставалось неизменным одно — высокое качество и вкус. Это стало возможным благодаря внутреннему контролю качества на всех этапах производства и многолетнему сотрудничеству с надежными поставщиками.</p>
-
-				<p>Важным в своей работе мы считаем постоянное развитие, совершенствование технологий, профессиональный рост сотрудников, что позволяет нам  идти в ногу со временем и соответствовать покупательским предпочтениям!</p>
-
-				<p>Ряд продукции ООО «ТД Слада» отмечен почетными грамотами и медалями. А лучшей рекомендацией и подтверждением качества собственной работы служат для нас многочисленные положительные отзывы наших клиентов, как постоянных, так и впервые обратившихся к нам.</p>
-			</div>
-		</article>
+            <?= $site_inform->content ?>
+        </article>
 		<div class="order-by-photo pt-4 pb-5">
 			<h2 class="text-center pb-4">Заказ торта по вашему фото</h2>
 			<div class="row">
@@ -156,7 +141,7 @@ $this->title = 'My Yii Application';
 				</div>
 			</div>
 			<div class="text-center pt-5">
-				<a href="" class="btn btn-lg btn-success">Заказать торт</a>
+				<a href="<?= \yii\helpers\Url::to(['custom/index']) ?>" class="btn btn-lg btn-success">Заказать торт</a>
 			</div>
 		</div>
 
