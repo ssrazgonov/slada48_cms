@@ -1,0 +1,178 @@
+2019-09-06 18:55:34 [::1][-][r80qkoo8p84vo47r948auij8at][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Hash is invalid. in D:\slada48_cms\vendor\yiisoft\yii2\base\Security.php:651
+Stack trace:
+#0 D:\slada48_cms\common\models\Admin.php(181): yii\base\Security->validatePassword('$2y$13$mwcqb4d7...', '')
+#1 D:\slada48_cms\common\models\LoginForm.php(45): common\models\Admin->validatePassword('$2y$13$mwcqb4d7...')
+#2 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 D:\slada48_cms\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#5 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#6 D:\slada48_cms\common\models\LoginForm.php(58): yii\base\Model->validate()
+#7 D:\slada48_cms\backend\controllers\SiteController.php(79): common\models\LoginForm->login()
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2019-09-06 18:55:34 [::1][-][r80qkoo8p84vo47r948auij8at][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'KiEuQtUrgcDAxy94w7OlIM8wbORXd0zAy-R3hamyb_N_TAM1omfpgqqdaDyR9OIYhWMj0CVAPoSAsz30wucloA=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => '$2y$13$mwcqb4d7Qjo8v2HrS9Jvoe9B0Qre45c0u4eEb6SUvheoQwd1CVKne'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'r80qkoo8p84vo47r948auij8at'
+    '_csrf-backend' => '02dbf3987bc3ef19747a31ef4b0294ac51c7720702341d034079307ff4cf7e67a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Um-wwLhBjZGDRGG8JSO4r7rDKWJqkUJS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '297'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=r80qkoo8p84vo47r948auij8at; _csrf-backend=02dbf3987bc3ef19747a31ef4b0294ac51c7720702341d034079307ff4cf7e67a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Um-wwLhBjZGDRGG8JSO4r7rDKWJqkUJS%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '50428'
+    'REDIRECT_URL' => '/admin/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567796134.756
+    'REQUEST_TIME' => 1567796134
+]
+2019-09-06 18:55:57 [::1][-][r80qkoo8p84vo47r948auij8at][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Hash is invalid. in D:\slada48_cms\vendor\yiisoft\yii2\base\Security.php:651
+Stack trace:
+#0 D:\slada48_cms\common\models\Admin.php(181): yii\base\Security->validatePassword('$2y$13$mwcqb4d7...', '')
+#1 D:\slada48_cms\common\models\LoginForm.php(45): common\models\Admin->validatePassword('$2y$13$mwcqb4d7...')
+#2 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 D:\slada48_cms\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#5 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#6 D:\slada48_cms\common\models\LoginForm.php(58): yii\base\Model->validate()
+#7 D:\slada48_cms\backend\controllers\SiteController.php(79): common\models\LoginForm->login()
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2019-09-06 18:55:57 [::1][-][r80qkoo8p84vo47r948auij8at][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'KiEuQtUrgcDAxy94w7OlIM8wbORXd0zAy-R3hamyb_N_TAM1omfpgqqdaDyR9OIYhWMj0CVAPoSAsz30wucloA=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => '$2y$13$mwcqb4d7Qjo8v2HrS9Jvoe9B0Qre45c0u4eEb6SUvheoQwd1CVKne'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'r80qkoo8p84vo47r948auij8at'
+    '_csrf-backend' => '02dbf3987bc3ef19747a31ef4b0294ac51c7720702341d034079307ff4cf7e67a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Um-wwLhBjZGDRGG8JSO4r7rDKWJqkUJS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '297'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=r80qkoo8p84vo47r948auij8at; _csrf-backend=02dbf3987bc3ef19747a31ef4b0294ac51c7720702341d034079307ff4cf7e67a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Um-wwLhBjZGDRGG8JSO4r7rDKWJqkUJS%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '50437'
+    'REDIRECT_URL' => '/admin/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567796157.801
+    'REQUEST_TIME' => 1567796157
+]

@@ -99,3 +99,1018 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1567768700.733
     'REQUEST_TIME' => 1567768700
 ]
+2019-09-06 17:53:35 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: D:/slada48_cms/frontend/web/assets in D:\slada48_cms\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(376): ReflectionClass->newInstanceArgs(Array)
+#3 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 D:\slada48_cms\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 D:\slada48_cms\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#10 D:\slada48_cms\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#11 D:\slada48_cms\frontend\views\layouts\main.php(18): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): require('D:\\slada48_cms\\...')
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\slada48_cms\\...', Array)
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('D:\\slada48_cms\\...', Array, Object(frontend\controllers\SiteController))
+#15 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('\n<div class="co...')
+#16 D:\slada48_cms\frontend\controllers\SiteController.php(88): yii\base\Controller->render('index', Array)
+#17 [internal function]: frontend\controllers\SiteController->actionIndex()
+#18 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#21 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#22 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#24 {main}
+2019-09-06 17:53:33 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '50004'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567792413.869
+    'REQUEST_TIME' => 1567792413
+]
+2019-09-06 18:52:46 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: D:/slada48_cms/frontend/web/assets in D:\slada48_cms\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(376): ReflectionClass->newInstanceArgs(Array)
+#3 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 D:\slada48_cms\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 D:\slada48_cms\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#10 D:\slada48_cms\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#11 D:\slada48_cms\frontend\views\layouts\main.php(18): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): require('D:\\slada48_cms\\...')
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\slada48_cms\\...', Array)
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('D:\\slada48_cms\\...', Array, Object(frontend\controllers\SiteController))
+#15 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('\n<div class="co...')
+#16 D:\slada48_cms\frontend\controllers\SiteController.php(88): yii\base\Controller->render('index', Array)
+#17 [internal function]: frontend\controllers\SiteController->actionIndex()
+#18 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#21 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#22 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#24 {main}
+2019-09-06 18:52:46 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '50325'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567795966.423
+    'REQUEST_TIME' => 1567795966
+]
+2019-09-06 22:12:23 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:12:23 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51630'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807943.36
+    'REQUEST_TIME' => 1567807943
+]
+2019-09-06 22:12:26 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:12:26 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51631'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807946.475
+    'REQUEST_TIME' => 1567807946
+]
+2019-09-06 22:12:28 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:12:28 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51641'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807948.209
+    'REQUEST_TIME' => 1567807948
+]
+2019-09-06 22:12:28 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:12:28 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51622'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807948.261
+    'REQUEST_TIME' => 1567807948
+]
+2019-09-06 22:12:30 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:12:30 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51646'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807950.538
+    'REQUEST_TIME' => 1567807950
+]
+2019-09-06 22:12:34 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:12:34 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51648'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807954.552
+    'REQUEST_TIME' => 1567807954
+]
+2019-09-06 22:12:34 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:12:34 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51650'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807954.681
+    'REQUEST_TIME' => 1567807954
+]
+2019-09-06 22:12:36 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:12:36 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51652'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807956.445
+    'REQUEST_TIME' => 1567807956
+]
+2019-09-06 22:12:38 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:12:38 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51654'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807958.136
+    'REQUEST_TIME' => 1567807958
+]
+2019-09-06 22:13:05 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:13:05 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51667'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807985.18
+    'REQUEST_TIME' => 1567807985
+]
+2019-09-06 22:13:05 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:13:05 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51666'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567807985.233
+    'REQUEST_TIME' => 1567807985
+]
+2019-09-06 22:14:54 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/images/1.png". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/images/1...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-06 22:14:54 [::1][-][q9q6sig0irhbh41sgujiqvhvu9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'q9q6sig0irhbh41sgujiqvhvu9'
+    '_csrf-frontend' => '5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c\";}'
+    'advanced-backend' => 'iqr81tjvlmusb9rtcgji0j2ei3'
+    '_identity-backend' => '954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/page/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=q9q6sig0irhbh41sgujiqvhvu9; _csrf-frontend=5440ee108df03b10d32a8bebd9fe0ef66715a41c43785901f1bc0bad539ec968a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MeToAxLj3ZOaglCstRAJLRNNuf66Rm3c%22%3B%7D; advanced-backend=iqr81tjvlmusb9rtcgji0j2ei3; _identity-backend=954a825fa6d26383689e512de8e485ca93b445544d633d7f1f7b3cfd84509975a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=129c5a94e868efc43c6c905bdcc86c0c92773e7b4f52591afe305b49be0b1969a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22JKeJARXLNWkGHTAoZ9-qdV6jThwrsIF_%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/frontend/web/index.php'
+    'REMOTE_PORT' => '51713'
+    'REDIRECT_URL' => '/frontend/web/upload/images/1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/upload/images/1.png'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567808094.567
+    'REQUEST_TIME' => 1567808094
+]
