@@ -62,30 +62,30 @@ class PageController extends Controller
         return [
             'files-get' => [
                 'class' => 'vova07\imperavi\actions\GetFilesAction',
-                'url' => '/upload/images/', // Directory URL address, where files are stored.
-                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
+                'url' => '/upload/images/pages/files', // Directory URL address, where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images/pages/files', // Or absolute path to directory where files are stored.
             ],
             'file-upload' => [
                 'class' => 'vova07\imperavi\actions\UploadFileAction',
-                'url' => '/upload/images/', // Directory URL address, where files are stored.
-                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
+                'url' => '/upload/images/pages/files', // Directory URL address, where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images/pages/files', // Or absolute path to directory where files are stored.
                 'uploadOnlyImage' => false, // For any kind of files uploading.
             ],
             'file-delete' => [
                 'class' => 'vova07\imperavi\actions\DeleteFileAction',
                 'url' => '/upload/images/', // Directory URL address, where files are stored.
-                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images/pages/files', // Or absolute path to directory where files are stored.
             ],
             'images-get' => [
                 'class' => 'vova07\imperavi\actions\GetImagesAction',
-                'url' => '/upload/images/', // Directory URL address, where files are stored.
-                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
+                'url' => '/upload/images/pages/images', // Directory URL address, where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images/pages/images', // Or absolute path to directory where files are stored.
                 'options' => ['only' => ['*.jpg', '*.jpeg', '*.png', '*.gif', '*.ico']], // These options are by default.
             ],
             'image-upload' => [
                 'class' => 'vova07\imperavi\actions\UploadFileAction',
-                'url' => '/upload/images/', // Directory URL address, where files are stored.
-                'path' => __DIR__ . '/../../frontend/web/upload/images', // Or absolute path to directory where files are stored.
+                'url' => '/upload/images/pages/images', // Directory URL address, where files are stored.
+                'path' => __DIR__ . '/../../frontend/web/upload/images/pages/images', // Or absolute path to directory where files are stored.
             ],
         ];
     }

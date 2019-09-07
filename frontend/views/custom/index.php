@@ -1,6 +1,30 @@
 <main class="container-fluid">
+
     <div class="row">
         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-12">
+
+            <?php use kartik\datetime\DateTimePicker;
+
+            if (Yii::$app->user->isGuest) : ?>
+
+            <div class="jumbotron">
+                <h1 class="display-4">Требуется авторизация</h1>
+                <p class="lead">Заказ торта по фото доступен только зарегистрированным пользователям</p>
+                <hr class="my-4">
+                <p>Войдите на сайт под своей учетной записью</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="<?= \yii\helpers\Url::to(['site/login']) ?>" role="link">Вход</a>
+                </p>
+                <hr class="my-4">
+                <p>Зарегистрируйтесь у нас на сайте</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="<?= \yii\helpers\Url::to(['site/signup']) ?>" role="link">Регистрация</a>
+                </p>
+            </div>
+
+            <?php endif; ?>
+
+            <?php if (!Yii::$app->user->isGuest) : ?>
             <div class="row pb-5">
                 <div class="col-md-12">
                     <div class="load-pic">
@@ -15,39 +39,47 @@
                             </div>
                             <div class="col-md-9 pl-5">
                                 <?= $category->description ?>
+
+                                <div class="order-form">
+                                    <?php $form = \yii\bootstrap4\ActiveForm::begin() ?>
+
+                                        <?= $form->field($custom_form, 'weight', ['inputOptions' => [
+                                            'autocomplete' => 'off']])
+                                            ->label('Масса (кг) - не менее 2') ?>
+
+                                        <?= $form->field($custom_form, 'text', ['inputOptions' => [
+                                            'autocomplete' => 'off']])
+                                            ->label('Поздравительная надпись') ?>
+
+                                    <?= $form->field($custom_form, 'comment', ['inputOptions' => [
+                                        'autocomplete' => 'off']])
+                                        ->textarea()
+                                        ->label('Комментарий к заказу') ?>
+
+                                    <?= $form->field($custom_form, 'datetime', ['inputOptions' => [
+                                        'autocomplete' => 'off']])
+                                        ->widget(DateTimePicker::className(), [
+                                            'bsVersion' => '4',
+                                            'pluginOptions' => [
+                                                'autoclose' => true,
+                                            ]
+                                        ])
+                                        ->label('Дата выдачи') ?>
+
+                                        <button type="submit" class="btn btn-success">Заказать</button>
+
+                                    <?php \yii\bootstrap4\ActiveForm::end() ?>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="order-form">
-<!--                        <form>-->
-<!--                            <div class="form-group">-->
-<!--                                <label for="mass">Масса (кг) - не менее 2</label>-->
-<!--                                <input type="number" class="form-control" id="mass" aria-describedby="emailHelp" placeholder="2">-->
-<!--                            </div>-->
-<!--                            <div class="form-group">-->
-<!--                                <label for="congratulate">Поздравительная надпись</label>-->
-<!--                                <input type="password" class="form-control" id="congratulate" placeholder="Поздравляю с днем рождения">-->
-<!--                            </div>-->
-<!--                            <div class="form-group">-->
-<!--                                <label for="congratulate">Комментарий к заказу</label>-->
-<!--                                <input type="password" class="form-control" id="congratulate" placeholder="Поздравляю с днем рождения">-->
-<!--                            </div>-->
-<!--                            <div class="form-group">-->
-<!--                                <label for="congratulate">Дата выдачи</label>-->
-<!--                                <input type="password" class="form-control" id="congratulate" placeholder="Поздравляю с днем рождения">-->
-<!--                            </div>-->
-<!--                            <div class="form-group">-->
-<!--                                <label for="congratulate">Время выдачи</label>-->
-<!--                                <input type="password" class="form-control" id="congratulate" placeholder="Поздравляю с днем рождения">-->
-<!--                            </div>-->
-<!---->
-<!--                            <button type="submit" class="btn btn-success">Войти</button>-->
-<!--                            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>-->
-<!--                        </form>-->
 
-                    </div>
                 </div>
             </div>
+
+            <?php endif; ?>
+
         </div>
 
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 pt-5">

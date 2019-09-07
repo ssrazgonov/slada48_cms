@@ -46,7 +46,11 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                "page/<id:\w+>" => 'page/index'
+                "page/<id:\w+>" => 'page/index',
+                "product/<id:\w+>" => 'product/index',
+                "category" => 'category/index',
+                "category/<id:\w+>" => 'category/show',
+                "custom" => 'custom/index',
             ],
         ],
 //        */

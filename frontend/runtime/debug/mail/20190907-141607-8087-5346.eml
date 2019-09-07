@@ -1,0 +1,49 @@
+Message-ID: <8e034f6816e6208ef4a9c927e859c7b5@slada48.loc>
+Date: Sat, 07 Sep 2019 14:16:07 +0000
+Subject: Account registration at My Application
+From: My Application robot <support@example.com>
+To: manager@manager.loc
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1567865767_76785fcacf16570fbc1b300bcb756dbf_=_"
+
+
+--_=_swift_1567865767_76785fcacf16570fbc1b300bcb756dbf_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello manager,
+
+Follow the link below to verify your email:
+
+http://slada48.loc:8080/site/verify-email?token=3DN_14VA87_hBbGAUU4ZnrXz7lN=
+q2Qu82k_1567865767
+
+--_=_swift_1567865767_76785fcacf16570fbc1b300bcb756dbf_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+" />
+    <title></title>
+    </head>
+<body>
+        <div class=3D"verify-email">
+    <p>Hello manager,</p>
+
+    <p>Follow the link below to verify your email:</p>
+
+    <p><a href=3D"http://slada48.loc:8080/site/verify-email?token=3DN_14VA8=
+7_hBbGAUU4ZnrXz7lNq2Qu82k_1567865767">http://slada48.loc:8080/site/verify-e=
+mail?token=3DN_14VA87_hBbGAUU4ZnrXz7lNq2Qu82k_1567865767</a></p>
+</div>
+    </body>
+</html>
+
+
+--_=_swift_1567865767_76785fcacf16570fbc1b300bcb756dbf_=_--
