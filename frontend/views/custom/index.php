@@ -66,6 +66,8 @@
                                         ])
                                         ->label('Дата выдачи') ?>
 
+                                    <?= $form->field($custom_form, 'payment')->radioList(['1' => 'Наличными в магазине', '2' => 'Картой через сбербанк онлайн'])->label('') ?>
+
                                         <button type="submit" class="btn btn-success">Заказать</button>
 
                                     <?php \yii\bootstrap4\ActiveForm::end() ?>

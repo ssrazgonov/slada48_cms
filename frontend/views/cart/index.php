@@ -6,14 +6,14 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Корзина';
     <h1 class="pt-5">Корзина</h1>
 
     <?php if($productsInCart) : ?>
-    <table class="cart-table mb-2 mt-5">
+    <table class="cart-table mb-2 mt-5 table table-bordered table-hover table-striped table-dark">
         <thead>
         <tr>
             <th scope="col">№</th>
             <th scope="col">Изоображение</th>
             <th scope="col">Наименование товара</th>
             <th scope="col">Опции / Начинка</th>
-            <th scope="col">Кол-во грамм / штук</th>
+            <th scope="col">Кол-во кг / штук</th>
             <th scope="col">Цена</th>
             <th scope="col">Сумма</th>
             <th scope="col">Удалить</th>
@@ -25,9 +25,9 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Корзина';
         <tr>
             <th><?= $i++ ?></th>
             <td><img src="/upload/product/<?=$product['product']['id']?>/<?= $product['product']['prod_img'] ?>" alt="<?= $product['product']['title'] ? $product['product']['title'] : $product['product']['vendor_code'] ?>" class="cart-img"></td>
-            <td><?= $product['product']['vendor_code'] ? $product['product']['vendor_code'].'</br>' : ""  ?> <?= $product['product']['title'] ?></td>
+            <td><?= $product['product']['vendor_code'] ? "Арт. " . $product['product']['vendor_code'].'</br>' : ""  ?> Нименование: <?= $product['product']['title'] ?></td>
             <td><?= $product['option'] ? $product['option']['description'] : '' ?></td>
-            <td><?= $product['quantity'] ?> <?= $product['product']['price_type_id'] === '1' ? 'грамм': 'шт.'?></td>
+            <td><?= $product['quantity'] ?> <?= $product['product']['price_type_id'] === '1' ? 'кг': 'шт.'?></td>
             <td><?= $product['price'] ?> руб.</td>
             <td><?= $product['sum'] ?> руб.</td>
 

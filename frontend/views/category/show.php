@@ -22,7 +22,8 @@ use yii\bootstrap4\LinkPager;
                             <div class="">
 
                                 <p><?= $product->price ?> руб. <?= $product->price_type_id == 1 ? 'за кг.' : 'за шт.' ?></p>
-                                <button class="btn btn-success">В корзину</button>
+<!--                                <button class="btn btn-success">В корзину</button>-->
+                                <a href="<?= \yii\helpers\Url::to(['product/index', 'id' => $product->id]) ?>" class="btn btn-success">Подробнее</a>
                             </div>
 
                         </div>

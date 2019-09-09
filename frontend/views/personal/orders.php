@@ -37,17 +37,20 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Список зака�
                         <td><?= $order->amount ?> руб.</td>
                         <td><?= $order->created_at ?></td>
                         <td><?= $order->paymentMethod->title ?></td>
-                        <td><?= $order->orderStatus->name ?></td>
+
+                        <?php
+                            $colors = [
+                                1 => "#ffc107", 2 => '#1e7e34', 3 => 'yellow', 4 => 'gray'
+                            ];
+                         ?>
+                        <td><span style="background-color: <?= $colors[$order->orderStatus->code]?>"> <?= $order->orderStatus->name ?></span></td>
                         <td class="text-center">
-                            <a href="<?= Url::to(['personal/order', 'id' => $order->id])?>" class="btn btn-success mb-2">Перейти</a>
-                            <?php if ($order->paymentMethod->code == 'sber') : ?>
-                                <a href="<?= Url::to(['order/pay', 'id' => $order->id])?>" class="btn btn-warning">Оплатить</a>
+                            <a href="<?= Url::to(['personal/order', 'id' => $order->id])?>" class="btn btn-success mb-2 personal-btn">Подробнее</a>
+                            <?php if ($order->paymentMethod->code == 'sber' && $order->status == 1) :?>
+                                <?= \yii\helpers\Html::a('Оплатить', ['/sberbank/default/create', 'id' => $invoices[$order->id]->id /* id инвойса */], ['class' => 'btn btn-warning personal-btn']) ?>
                             <?php endif; ?>
                         </td>
                     </tr>
-
-
-<!--                    <li><a href="--><?//= Url::to(['personal/order', 'id' => $order->id])?><!--" >  Заказ номер: --><?//= $order->id ?><!-- На сумму:--><?//= $order->amount ?><!-- Время заказа: --><?//= $order->created_at ?><!--</a> </li>-->
                     
                 <?php endforeach; ?>
                 </table>

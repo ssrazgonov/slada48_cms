@@ -22,7 +22,7 @@ $this->title = Yii::$app->settings->set->title . " | " . $product->category->tit
                             <h1 class="border-bottom border-dark pb-2"><?php echo !empty($product->title) ? $product->title : $product->vendor_code ?></h1>
                             <p>Арт. <?= $product->vendor_code ?></p>
                             <?php if($product->price_type_id === 1): ?>
-                                <p><span>Цена за 1000 грамм: </span><strong> <?= $product->price ?> руб.</strong></p>
+                                <p><span>Цена за 1 кг. </span><strong> <?= $product->price ?> руб.</strong></p>
                             <?php else: ?>
                                 <p><span>Цена за штуку: </span><strong> <?= $product->price ?> руб.</strong></p>
                             <?php endif; ?>
@@ -35,8 +35,8 @@ $this->title = Yii::$app->settings->set->title . " | " . $product->category->tit
 
                                 <?php if($product->price_type_id === 1): ?>
 
-                                    <?php for ($i = 2000; $i < 5000; $i += 100) : ?>
-                                        <option value="<?= $i ?>"><?= $i ?> гр.</option>
+                                    <?php for ($i = 2; $i < 15; $i += 0.1) : ?>
+                                        <option value="<?= $i ?>"><?= $i ?> кг.</option>
                                     <?php endfor; ?>
                                 <?php else: ?>
                                     <?php $min = $product->min ? $product->min : 1; ?>
@@ -82,7 +82,7 @@ $this->title = Yii::$app->settings->set->title . " | " . $product->category->tit
                             </div>
                         <?php endif; ?>
                         <div class="buy-btn-shell pt-2">
-                            <button class="btn btn-primary">Задать вопрос</button>
+<!--                            <button class="btn btn-primary">Задать вопрос</button>-->
                             <button type="submit" class="btn btn-success">В корзину</button>
                         </div>
 

@@ -15,7 +15,7 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Оформление �
             <th scope="col">Изоображение</th>
             <th scope="col">Наименование товара</th>
             <th scope="col">Опции / Начинка</th>
-            <th scope="col">Кол-во грамм / штук</th>
+            <th scope="col">Кол-во кг / штук</th>
             <th scope="col">Цена</th>
             <th scope="col">Сумма</th>
             <th scope="col">Удалить</th>
@@ -33,10 +33,10 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Оформление �
                 <td><?= $product['product']['vendor_code'] ? $product['product']['vendor_code'].'</br>' : ""  ?> <?= $product['product']['title'] ?></td>
                 <td><?= $product['option'] ? $product['option']['description'] : '' ?></td>
 
-                <td><?= $product['quantity'] ?> <?= $product['product']['price_type_id'] === '1' ? 'грамм': 'шт.'?></td>
+                <td><?= $product['quantity'] ?> <?= $product['product']['price_type_id'] === '1' ? 'кг.': 'шт.'?></td>
                 <td><?= $product['product']['price'] ?> руб.</td>
 
-                <!-- Логика расчета цены зависит от типа цены, может быть за граммы а может быть за штуки -->
+                <!-- Логика расчета цены зависит от типа цены, может быть за кг а может быть за штуки -->
                 <?php $average = $product['product']['price_type_id'] === '1'? $product['product']['price'] / 1000 *  $product['quantity'] : $product['product']['price'] *  $product['quantity']?>
                 <td><?= $average ?> руб.</td>
                 <?php $sum += $average; ?>

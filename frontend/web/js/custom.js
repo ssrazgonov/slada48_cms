@@ -14,7 +14,7 @@ $(document).ready(function () {
             success: function(response){
                 var response = JSON.parse(response);
                 if(response.success){
-                    $('#upload_img_tag').attr('src', '/upload/tmp/' + response.success)
+                    $('#upload_img_tag').attr('src', response.success);
                 }
                 else{
                     alert(response.error);

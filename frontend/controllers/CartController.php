@@ -32,9 +32,11 @@ class CartController extends Controller
             $productTmp = Yii::$app->request->post();
             $product = Product::find()->where(['id' => $productTmp['product_id']])->one();
 
-            $product_sum = $product->price_type_id === 1 ?
-                           $product->price * $productTmp['product_quantity'] /1000 :
-                           $product->price * $productTmp['product_quantity'];
+//            $product_sum = $product->price_type_id === 1 ?
+//                           $product->price * $productTmp['product_quantity'] /1000 :
+//                           $product->price * $productTmp['product_quantity'];
+
+            $product_sum = $product->price * $productTmp['product_quantity'];
 
             $productToCart = [
                 'id' => $productTmp['product_id'],

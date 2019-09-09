@@ -1,4 +1,7 @@
 <?php
+
+use pantera\yii2\pay\sberbank\components\Sberbank;
+
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
@@ -55,11 +58,50 @@ return [
         ],
 //        */
     ],
+
     'modules' => [
-            'gii' => [
-        'class' => 'yii\gii\Module',
-        'allowedIPs' => ['*'] // adjust this to your needs
-    ],
+        'gii' => [
+            'class' => 'yii\gii\Module',
+            'allowedIPs' => ['*'] // adjust this to your needs
+        ],
+        'sberbank' => [
+//            'class' => 'pantera\yii2\pay\sberbank\Module',
+            'class' => \pantera\yii2\pay\sberbank\Module::className(),
+            'components' => [
+                'sberbank' => [
+                    'class' => pantera\yii2\pay\sberbank\components\Sberbank::className(),
+
+                    // время жизни инвойса в секундах (по умолчанию 20 минут - см. документацию Сбербанка)
+                    // в этом примере мы ставим время 1 неделю, т.е. в течение этого времени покупатель может
+                    // произвести оплату по выданной ему ссылке
+                    'sessionTimeoutSecs' => 60 * 60 * 24 * 7,
+
+                    // логин api мерчанта
+                    'login' => 'slada48-api',
+
+                    // пароль api мерчанта
+                    'password' => '',
+
+                    // использовать тестовый режим (по умолчанию - нет)
+                    'testServer' => false,
+                ],
+            ],
+
+            // страница вашего сайта с информацией об успешной оплате
+            'successUrl' => '/testpay/success',
+
+            // страница вашего сайта с информацией о НЕуспешной оплате
+            'failUrl' => '/testpay/fail',
+
+            // обработчик, вызываемый по факту успешной оплаты
+            'successCallback' => function($invoice){
+                Yii::$app->session->setFlash('inv', $invoice);
+
+                $order = \common\models\Order::findOne($invoice->order_id);
+                $order->status = 2;
+                $order->update();
+            }
+        ],
         ],
     'params' => $params,
 ];

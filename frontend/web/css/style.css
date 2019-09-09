@@ -420,3 +420,11 @@ a:hover{
     height: 400px;
     object-fit: cover;
 }
+
+main {
+    min-height: calc(100vh - 271px);
+}
+
+.personal-btn {
+    width: 110px;
+}

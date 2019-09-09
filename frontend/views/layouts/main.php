@@ -64,8 +64,8 @@ AppAsset::register($this);
 							<a class="nav-link" href="">
 							    <i class="far fa-user"></i> <?= Yii::$app->user->identity->username ?></a>
 							<ul class="navbar-nav secondary-menu">
-								<li class="nav-item"><a href="<?= Url::to(['personal/index']); ?>" class="nav-link">Личный кабинет</a></li>
-								<li class="nav-item"><a href="<?= Url::to(['personal/index']); ?>" class="nav-link">Управление заказами</a></li>
+								<li class="nav-item"><a href="<?= Url::to(['personal/orders']); ?>" class="nav-link">Личный кабинет</a></li>
+
 							</ul>
 						</li>
 						<li class="nav-item">

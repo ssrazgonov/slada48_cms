@@ -14,6 +14,7 @@ class Custom extends Model
     public $text;
     public $comment;
     public $datetime;
+    public $payment;
 
     /**
      * {@inheritdoc}
@@ -21,7 +22,7 @@ class Custom extends Model
     public function rules()
     {
         return [
-            [['weight'], 'required'],
+            [['weight', 'payment'], 'required'],
             ['weight', 'compare', 'compareValue' => 2, 'operator' => '>=', 'type' => 'number'],
             [['text', 'comment', 'datetime'], 'trim']
         ];

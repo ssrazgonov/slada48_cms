@@ -26,7 +26,7 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Просмотр за�
                     <th scope="col">Изоображение</th>
                     <th scope="col">Наименование товара</th>
                     <th scope="col">Опции / Начинка</th>
-                    <th scope="col">Кол-во грамм / штук</th>
+                    <th scope="col">Кол-во кг. / штук</th>
                     <th scope="col">Цена</th>
                     <th scope="col">Сумма</th>
                 </tr>
@@ -39,7 +39,7 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Просмотр за�
                         <td><img src="/upload/product/<?=$product->product->id?>/<?= $product->product['prod_img'] ?>" alt="<?= $product->product['title'] ? $product->product['title'] : $product->product['vendor_code'] ?>" class="cart-img"></td>
                         <td><?= $product->product['vendor_code'] ? $product->product['vendor_code'].'</br>' : ""  ?> <?= $product->product['title'] ?></td>
                         <td><?= $product->product_option ? $product->product_option : '' ?></td>
-                        <td><?= $product->quantity ?> <?= $product->product->price_type_id === '1' ? 'грамм': 'шт.'?></td>
+                        <td><?= $product->quantity ?> <?= $product->product->price_type_id == '1' ? 'кг': 'шт.'?></td>
                         <td><?= $product->price ?> руб.</td>
                         <td><?= $product->sum ?> руб.</td>
                     </tr>
@@ -49,6 +49,10 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Просмотр за�
 
             <div class="alert alert-light order-step mt-5 mb-5" role="alert">
                 <h3>На сумму <?= $order->amount?> руб.</h3>
+
+                <?php if ($invoice) : ?>
+                    <?= \yii\helpers\Html::a('Оплатить заказ', ['/sberbank/default/create', 'id' => $invoice->id /* id инвойса */], ['class' => 'btn btn-warning']) ?>
+                <?php endif; ?>
             </div>
 
         </div>

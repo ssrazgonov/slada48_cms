@@ -754,3 +754,181 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1567811388.761
     'REQUEST_TIME' => 1567811388
 ]
+2019-09-08 11:19:18 [::1][3][7i83mlb7i36a3hvql8f4sng6b0][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'title' of non-object in D:\slada48_cms\backend\views\product\view.php:44
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(245): ::call_user_func:{D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php:245}()
+#1 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\DetailView->init()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): yii\widgets\DetailView->__construct()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs()
+#5 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build()
+#6 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject()
+#8 D:\slada48_cms\backend\views\product\view.php(53): yii\base\Widget::widget()
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): yii\web\View->unknown()
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\web\View->renderPhpFile()
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\web\View->renderFile()
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\web\View->render()
+#13 D:\slada48_cms\backend\controllers\ProductController.php(78): backend\controllers\ProductController->render()
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\ProductController->actionView()
+#15 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#16 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#17 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(528): backend\controllers\ProductController->runAction()
+#18 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#20 D:\slada48_cms\backend\web\index.php(17): yii\web\Application->run()
+#21 {main}
+2019-09-08 11:19:18 [::1][3][7i83mlb7i36a3hvql8f4sng6b0][info][application] $_GET = [
+    'id' => '2774'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '2ecb6aa522e91282980c753a369325c6000661d6f68377fd6265f09bf6b1d6b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[30,\"-MMbmA5OefqsapTdtfDdanTr1NiGvfYo\",2592000]\";}'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'advanced-frontend' => 'h2768ap4gh3im9i344k8qo365a'
+    '_csrf-frontend' => 'e6b17cc4baab4a877f69cacc40d1c1695e964c991a62f62fd465de3ddb60229ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BOhscTntWwA_lu41qi-1VlYBgIji7WB3\";}'
+    'advanced-backend' => '7i83mlb7i36a3hvql8f4sng6b0'
+    '_csrf-backend' => '26d000983b4e28d4208e6b2b651cbb7de6ffe177c1ecdf086a0aa66b75fc3261a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_A9bgcQGam7m1pj74sZD-fJU31P53Z1M\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/product/index?sort=-id'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=2ecb6aa522e91282980c753a369325c6000661d6f68377fd6265f09bf6b1d6b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B30%2C%22-MMbmA5OefqsapTdtfDdanTr1NiGvfYo%22%2C2592000%5D%22%3B%7D; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; advanced-frontend=h2768ap4gh3im9i344k8qo365a; _csrf-frontend=e6b17cc4baab4a877f69cacc40d1c1695e964c991a62f62fd465de3ddb60229ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BOhscTntWwA_lu41qi-1VlYBgIji7WB3%22%3B%7D; advanced-backend=7i83mlb7i36a3hvql8f4sng6b0; _csrf-backend=26d000983b4e28d4208e6b2b651cbb7de6ffe177c1ecdf086a0aa66b75fc3261a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_A9bgcQGam7m1pj74sZD-fJU31P53Z1M%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '49166'
+    'REDIRECT_URL' => '/admin/product/view'
+    'REDIRECT_QUERY_STRING' => 'id=2774'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2774'
+    'REQUEST_URI' => '/admin/product/view?id=2774'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567941558.275
+    'REQUEST_TIME' => 1567941558
+]
+2019-09-08 11:21:12 [::1][3][7i83mlb7i36a3hvql8f4sng6b0][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'email' of non-object in D:\slada48_cms\backend\views\order\index.php:29
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\grid\DataColumn.php(230): ::call_user_func:{D:\slada48_cms\vendor\yiisoft\yii2\grid\DataColumn.php:230}()
+#1 D:\slada48_cms\vendor\yiisoft\yii2\grid\DataColumn.php(244): yii\grid\DataColumn->getDataCellValue()
+#2 D:\slada48_cms\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\DataColumn->renderDataCell()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow()
+#5 D:\slada48_cms\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#6 D:\slada48_cms\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\grid\GridView.php(326): yii\grid\GridView->renderSection()
+#8 D:\slada48_cms\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection()
+#9 D:\slada48_cms\vendor\yiisoft\yii2\widgets\BaseListView.php(138): yii\grid\GridView->yii\widgets\{closure:D:\slada48_cms\vendor\yiisoft\yii2\widgets\BaseListView.php:134-138}()
+#10 D:\slada48_cms\vendor\yiisoft\yii2\widgets\BaseListView.php(138): ::preg_replace_callback()
+#11 D:\slada48_cms\vendor\yiisoft\yii2\grid\GridView.php(301): yii\grid\GridView->run()
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#13 D:\slada48_cms\backend\views\order\index.php(22): yii\base\Widget::widget()
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): yii\web\View->unknown()
+#15 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\web\View->renderPhpFile()
+#16 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\web\View->renderFile()
+#17 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\web\View->render()
+#18 D:\slada48_cms\backend\controllers\OrderController.php(64): backend\controllers\OrderController->render()
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\OrderController->actionIndex()
+#20 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#21 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#22 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(528): backend\controllers\OrderController->runAction()
+#23 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#24 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#25 D:\slada48_cms\backend\web\index.php(17): yii\web\Application->run()
+#26 {main}
+2019-09-08 11:21:12 [::1][3][7i83mlb7i36a3hvql8f4sng6b0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '2ecb6aa522e91282980c753a369325c6000661d6f68377fd6265f09bf6b1d6b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[30,\"-MMbmA5OefqsapTdtfDdanTr1NiGvfYo\",2592000]\";}'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'advanced-frontend' => 'h2768ap4gh3im9i344k8qo365a'
+    '_csrf-frontend' => 'e6b17cc4baab4a877f69cacc40d1c1695e964c991a62f62fd465de3ddb60229ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BOhscTntWwA_lu41qi-1VlYBgIji7WB3\";}'
+    'advanced-backend' => '7i83mlb7i36a3hvql8f4sng6b0'
+    '_csrf-backend' => '26d000983b4e28d4208e6b2b651cbb7de6ffe177c1ecdf086a0aa66b75fc3261a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_A9bgcQGam7m1pj74sZD-fJU31P53Z1M\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/product/index?sort=-id'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=2ecb6aa522e91282980c753a369325c6000661d6f68377fd6265f09bf6b1d6b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B30%2C%22-MMbmA5OefqsapTdtfDdanTr1NiGvfYo%22%2C2592000%5D%22%3B%7D; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; advanced-frontend=h2768ap4gh3im9i344k8qo365a; _csrf-frontend=e6b17cc4baab4a877f69cacc40d1c1695e964c991a62f62fd465de3ddb60229ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BOhscTntWwA_lu41qi-1VlYBgIji7WB3%22%3B%7D; advanced-backend=7i83mlb7i36a3hvql8f4sng6b0; _csrf-backend=26d000983b4e28d4208e6b2b651cbb7de6ffe177c1ecdf086a0aa66b75fc3261a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_A9bgcQGam7m1pj74sZD-fJU31P53Z1M%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '49312'
+    'REDIRECT_URL' => '/admin/order/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/order/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1567941672.597
+    'REQUEST_TIME' => 1567941672
+]

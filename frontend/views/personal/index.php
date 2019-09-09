@@ -4,7 +4,7 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Личный каби�
 ?>
 
 
-<div class="container">
+<main class="container">
     <h1 class="mt-4">Личный кабинет</h1>
     <div class="row">
         <div class="col-md-4">
@@ -18,4 +18,4 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Личный каби�
         </div>
 
     </div>
-</div>
+</main>

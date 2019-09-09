@@ -86,8 +86,10 @@ class OrderController extends \yii\web\Controller
                     $orderProducts = OrderProduct::find()->where(['order_id' => $order->id])->all();
                     $orderProducts->delete();
                     $order->delete();
-                    return $this->redirect(['oreder/index']);
+                    return $this->redirect(['order/index']);
                 }
+
+                Yii::$app->session->remove('cart');
 
             }
         } else {

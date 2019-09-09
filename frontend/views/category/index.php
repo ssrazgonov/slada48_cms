@@ -24,7 +24,7 @@ $this->title = Yii::$app->settings->set->title . " | " . 'Все категор�
                                 <div class="">
 
                                     <p><?= $product->price ?> руб. за кг.</p>
-                                    <button class="btn btn-success">В корзину</button>
+                                    <a href="<?= \yii\helpers\Url::to(['product/index', 'id' => $product->id]) ?>" class="btn btn-success">Подробнее</a>
                                 </div>
 
                             </div>

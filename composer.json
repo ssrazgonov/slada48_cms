@@ -23,7 +23,8 @@
         "vova07/yii2-imperavi-widget": "*",
         "kartik-v/yii2-widget-datetimepicker": "*",
         "composer/composer": "^1.9",
-        "aneeshikmat/yii2-time-down-counter": "v1.0.0-stable"
+        "aneeshikmat/yii2-time-down-counter": "v1.0.0-stable",
+        "pantera-digital/yii2-sberbank-pay": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
