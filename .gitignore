@@ -18,8 +18,9 @@ nbproject
 Thumbs.db
 
 # composer vendor dir
-/vendor/*
-!/vendor/pantera-digital/*
+!vendor/
+vendor/*
+!vendor/pantera-digital/
 
 # composer itself is not needed
 composer.phar
