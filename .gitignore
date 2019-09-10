@@ -22,9 +22,6 @@ Thumbs.db
 
 vendor/*
 
-!vendor/pantera-digital/
-!vendor/pantera-digital/*
-
 # composer itself is not needed
 composer.phar
 
