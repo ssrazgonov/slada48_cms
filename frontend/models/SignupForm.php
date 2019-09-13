@@ -13,6 +13,8 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
+    public $policy;
+    public $phone;
 
 
     /**
@@ -22,15 +24,18 @@ class SignupForm extends Model
     {
         return [
             ['username', 'trim'],
-            ['username', 'required'],
-            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
+            ['username', 'required', 'message' => 'Введите ваше Имя'],
             ['username', 'string', 'min' => 2, 'max' => 255],
+
+            ['policy', 'compare', 'compareValue' => 1, 'message' => 'Ознакомьтесь с политикой конфиденциальности и дайте согласие на обработку ваших персональных данных.'],
+
+            ['phone', 'required', 'message' => 'Введите ваш номер телефона'],
 
             ['email', 'trim'],
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'Данный email уже зарегистрирован на сайте'],
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
@@ -55,6 +60,7 @@ class SignupForm extends Model
         $user->generateAuthKey();
 		$user->status = 10;
         $user->generateEmailVerificationToken();
+        $user->phone = $this->phone;
         return $user->save() && $this->sendEmail($user);
 
     }
@@ -72,9 +78,9 @@ class SignupForm extends Model
                 ['html' => 'emailVerify-html', 'text' => 'emailVerify-text'],
                 ['user' => $user]
             )
-            ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' robot'])
+            ->setFrom(Yii::$app->params['supportEmail'])
             ->setTo($this->email)
-            ->setSubject('Account registration at ' . Yii::$app->name)
+            ->setSubject('Слада 48. Успешная регистрация ' . Yii::$app->name)
             ->send();
     }
 }

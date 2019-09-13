@@ -165,12 +165,19 @@ class SiteController extends Controller
     {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
+//            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
+            $loginForm = new LoginForm();
+            $loginForm->email = $model->email;
+            $loginForm->password = $model->password;
+            $loginForm->login();
             return $this->goHome();
         }
 
+        $policy = Page::find()->where(['page_slug' => 'policy'])->one();
+
         return $this->render('signup', [
             'model' => $model,
+            'policy' => $policy
         ]);
     }
 
