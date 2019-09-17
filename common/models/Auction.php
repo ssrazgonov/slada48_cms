@@ -14,7 +14,6 @@ use Yii;
  * @property int $active
  * @property int $winner_bid_id
  * @property int $bid_current
- * @property int $bid_step
  */
 class Auction extends \yii\db\ActiveRecord
 {
@@ -37,10 +36,10 @@ class Auction extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['start_date', 'end_date', 'active', 'bid_step', 'auc_title', 'auc_text'], 'required'],
+            [['start_date', 'end_date', 'active','auc_title', 'auc_text'], 'required'],
             [['auc_img'], 'file', 'extensions' => 'png, jpg'],
-            [['product_id', 'active', 'winner_bid_id', 'bid_current', 'bid_step'], 'integer'],
-            [['start_date', 'end_date', 'winner_bid_id', 'bid_current', 'product_option_id', 'auc_img'], 'safe'],
+            [['active', 'winner_bid_id', 'bid_current'], 'integer'],
+            [['start_date', 'end_date', 'winner_bid_id', 'bid_current', 'auc_img', 'bid_min', 'bid_max'], 'safe'],
         ];
     }
 
@@ -56,8 +55,9 @@ class Auction extends \yii\db\ActiveRecord
             'active' => 'Актвность',
             'winner_bid_id' => 'Победившая ставка',
             'bid_current' => 'Текущая цена',
-            'bid_step' => 'Шаг аукциона',
-            'auc_img' => 'Картинка товара'
+            'auc_img' => 'Картинка товара',
+            'bid_min' => 'Минимальная ставка',
+            'bid_max' => 'Максимальная ставка'
         ];
     }
 

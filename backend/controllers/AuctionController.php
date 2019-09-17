@@ -69,11 +69,9 @@ class AuctionController extends Controller
     public function actionCreate()
     {
         $model = new Auction();
-        $products = Product::find()->where(['active' => 1])->asArray()->all();
-        $product_options = ProductOption::find()->asArray()->all();
-
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             $uploadImage = new UploadImage();
             $uploadImage->image = UploadedFile::getInstance($model, 'auc_img');
             $img = $uploadImage->upload('auction/');
@@ -88,8 +86,6 @@ class AuctionController extends Controller
 
         return $this->render('create', [
             'model' => $model,
-            'products' => $products,
-            'product_options' => $product_options
         ]);
     }
 

@@ -31,7 +31,8 @@ use kartik\datetime\DateTimePicker;
 
         <?= $form->field($model, 'active')->dropDownList(['1' => 'Активен', 0 => 'Не активен'])->label('Активность') ?>
 
-        <?= $form->field($model, 'bid_step')->textInput()->label('Шаг ставки') ?>
+        <?= $form->field($model, 'bid_min')->textInput()->label('Мин шаг ставки') ?>
+        <?= $form->field($model, 'bid_max')->textInput()->label('Макс шаг ставки') ?>
 
         <div class="form-group">
             <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>

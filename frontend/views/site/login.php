@@ -21,11 +21,17 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="col-lg-5">
                 <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
-                <?= $form->field($model, 'email')->textInput(['autofocus' => true])->label('Имя пользователя') ?>
+                <?= $form->field($model, 'email')->textInput(['autofocus' => true])->label('E-mail') ?>
 
                 <?= $form->field($model, 'password')->passwordInput()->label('Пароль') ?>
 
                 <?= $form->field($model, 'rememberMe')->checkbox()->label('Запомнить меня') ?>
+
+                <?php if (Yii::$app->request->get('redirect')) : ?>
+                    <?= $form->field($model, 'redirect')->hiddenInput(['value' => Yii::$app->request->get('redirect')])->label('') ?>
+                <?php endif; ?>
+
+
 
                 <div style="color:#999;margin:1em 0">
                     Забыли пароль ? <?= Html::a('Сбросить пароль', ['site/request-password-reset']) ?>.

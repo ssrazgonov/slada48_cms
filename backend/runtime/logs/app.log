@@ -932,3 +932,2453 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1567941672.597
     'REQUEST_TIME' => 1567941672
 ]
+2019-09-14 18:08:50 [::1][3][da2m464fulg1mkmg7c3e8cnods][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/site/logout". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:538
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/site/logo...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-14 18:08:50 [::1][3][da2m464fulg1mkmg7c3e8cnods][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'klu_qw0QomjQvMJ65flM_hk5XEtHvaMro6LSnZrYM1r5NcvyfCP6J73LsACdgAizfQs_HnHn1lmax4384r50Hw=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => 'da2m464fulg1mkmg7c3e8cnods'
+    '_csrf-backend' => '8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '106'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=da2m464fulg1mkmg7c3e8cnods; _csrf-backend=8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '53352'
+    'REDIRECT_URL' => '/admin/admin/site/logout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/admin/site/logout'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568484530.742
+    'REQUEST_TIME' => 1568484530
+]
+2019-09-14 18:09:01 [::1][3][da2m464fulg1mkmg7c3e8cnods][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/site/logout". in D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php:538
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/site/logo...', Array)
+#1 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-14 18:09:01 [::1][3][da2m464fulg1mkmg7c3e8cnods][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'klu_qw0QomjQvMJ65flM_hk5XEtHvaMro6LSnZrYM1r5NcvyfCP6J73LsACdgAizfQs_HnHn1lmax4384r50Hw=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => 'da2m464fulg1mkmg7c3e8cnods'
+    '_csrf-backend' => '8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '106'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=da2m464fulg1mkmg7c3e8cnods; _csrf-backend=8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '53374'
+    'REDIRECT_URL' => '/admin/admin/site/logout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/admin/site/logout'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568484541.904
+    'REQUEST_TIME' => 1568484541
+]
+2019-09-14 18:09:04 [::1][-][ihdk4barshcub9g3idmln4pn5h][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::username in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\base\Component->__get('username')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'username')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'username', Array)
+#3 D:\slada48_cms\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'username', Array)
+#4 D:\slada48_cms\backend\views\site\login.php(21): yii\widgets\ActiveField->textInput(Array)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): require('D:\\slada48_cms\\...')
+#6 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\slada48_cms\\...', Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\slada48_cms\\...', Array, Object(backend\controllers\SiteController))
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#9 D:\slada48_cms\backend\controllers\SiteController.php(85): yii\base\Controller->render('login', Array)
+#10 [internal function]: backend\controllers\SiteController->actionLogin()
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('login', Array)
+#14 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-09-14 18:09:04 [::1][-][ihdk4barshcub9g3idmln4pn5h][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    '_csrf-backend' => '8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE\";}'
+    'advanced-backend' => 'ihdk4barshcub9g3idmln4pn5h'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; _csrf-backend=8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE%22%3B%7D; advanced-backend=ihdk4barshcub9g3idmln4pn5h'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '53374'
+    'REDIRECT_URL' => '/admin/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568484544.719
+    'REQUEST_TIME' => 1568484544
+]
+2019-09-14 18:11:08 [::1][-][ihdk4barshcub9g3idmln4pn5h][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\LoginForm::username in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\base\Component->__get('username')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\LoginForm), 'username')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(backend\models\LoginForm), 'username', Array)
+#3 D:\slada48_cms\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(backend\models\LoginForm), 'username', Array)
+#4 D:\slada48_cms\backend\views\site\login.php(21): yii\widgets\ActiveField->textInput(Array)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): require('D:\\slada48_cms\\...')
+#6 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\slada48_cms\\...', Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\slada48_cms\\...', Array, Object(backend\controllers\SiteController))
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#9 D:\slada48_cms\backend\controllers\SiteController.php(85): yii\base\Controller->render('login', Array)
+#10 [internal function]: backend\controllers\SiteController->actionLogin()
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('login', Array)
+#14 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-09-14 18:11:07 [::1][-][ihdk4barshcub9g3idmln4pn5h][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    '_csrf-backend' => '8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE\";}'
+    'advanced-backend' => 'ihdk4barshcub9g3idmln4pn5h'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; _csrf-backend=8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE%22%3B%7D; advanced-backend=ihdk4barshcub9g3idmln4pn5h'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '53488'
+    'REDIRECT_URL' => '/admin/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568484667.973
+    'REQUEST_TIME' => 1568484667
+]
+2019-09-14 18:12:04 [::1][-][ihdk4barshcub9g3idmln4pn5h][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\LoginForm::email in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(303): yii\base\Component->__get('email')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(backend\models\LoginForm), 'email')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(backend\models\LoginForm), Array)
+#3 D:\slada48_cms\backend\models\LoginForm.php(58): yii\base\Model->validate()
+#4 D:\slada48_cms\backend\controllers\SiteController.php(79): backend\models\LoginForm->login()
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('login', Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-09-14 18:12:04 [::1][-][ihdk4barshcub9g3idmln4pn5h][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'TgwS1rQ-2NXTQb2AUL7ZHZ_yjUJoa5399YBOSb3xDxAlYmaPxQ2Amr42z_oox51Q-8DuF14x6I_M5REoxZdIVQ=='
+    'LoginForm' => [
+        'username' => 'manager'
+        'password' => 'manager'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    '_csrf-backend' => '8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE\";}'
+    'advanced-backend' => 'ihdk4barshcub9g3idmln4pn5h'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '240'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; _csrf-backend=8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE%22%3B%7D; advanced-backend=ihdk4barshcub9g3idmln4pn5h'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '53540'
+    'REDIRECT_URL' => '/admin/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568484724.238
+    'REQUEST_TIME' => 1568484724
+]
+2019-09-14 18:19:47 [::1][-][ihdk4barshcub9g3idmln4pn5h][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\LoginForm::email in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(303): yii\base\Component->__get('email')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(backend\models\LoginForm), 'email')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(backend\models\LoginForm), Array)
+#3 D:\slada48_cms\backend\models\LoginForm.php(58): yii\base\Model->validate()
+#4 D:\slada48_cms\backend\controllers\SiteController.php(79): backend\models\LoginForm->login()
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('login', Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-09-14 18:19:47 [::1][-][ihdk4barshcub9g3idmln4pn5h][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'TgwS1rQ-2NXTQb2AUL7ZHZ_yjUJoa5399YBOSb3xDxAlYmaPxQ2Amr42z_oox51Q-8DuF14x6I_M5REoxZdIVQ=='
+    'LoginForm' => [
+        'username' => 'manager'
+        'password' => 'manager'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    '_csrf-backend' => '8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE\";}'
+    'advanced-backend' => 'ihdk4barshcub9g3idmln4pn5h'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '240'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; _csrf-backend=8f8d8587647d7a3551bfe77f1cbc161c824dc5ac975ab9ffd22f1ef0f003ff82a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kntYq3XOmwrzxyDMd2cU6Zur9e_axfGE%22%3B%7D; advanced-backend=ihdk4barshcub9g3idmln4pn5h'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '53954'
+    'REDIRECT_URL' => '/admin/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568485187.73
+    'REQUEST_TIME' => 1568485187
+]
+2019-09-14 18:26:46 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'id' of non-object in D:\slada48_cms\backend\views\auction\view.php:41
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(245): ::call_user_func:{D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php:245}()
+#1 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\DetailView->init()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): yii\widgets\DetailView->__construct()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs()
+#5 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build()
+#6 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject()
+#8 D:\slada48_cms\backend\views\auction\view.php(46): yii\base\Widget::widget()
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): yii\web\View->unknown()
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\web\View->renderPhpFile()
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\web\View->renderFile()
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\web\View->render()
+#13 D:\slada48_cms\backend\controllers\AuctionController.php(60): backend\controllers\AuctionController->render()
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AuctionController->actionView()
+#15 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#16 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#17 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): backend\controllers\AuctionController->runAction()
+#18 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#20 D:\slada48_cms\backend\web\index.php(17): yii\web\Application->run()
+#21 {main}
+2019-09-14 18:26:46 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = [
+    'id' => '9'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/update?id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '54395'
+    'REDIRECT_URL' => '/admin/auction/view'
+    'REDIRECT_QUERY_STRING' => 'id=9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=9'
+    'REQUEST_URI' => '/admin/auction/view?id=9'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568485606.124
+    'REQUEST_TIME' => 1568485606
+]
+2019-09-14 18:27:35 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'id' of non-object in D:\slada48_cms\backend\views\auction\view.php:41
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(245): ::call_user_func:{D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php:245}()
+#1 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\DetailView->init()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): yii\widgets\DetailView->__construct()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs()
+#5 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build()
+#6 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject()
+#8 D:\slada48_cms\backend\views\auction\view.php(46): yii\base\Widget::widget()
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): yii\web\View->unknown()
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\web\View->renderPhpFile()
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\web\View->renderFile()
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\web\View->render()
+#13 D:\slada48_cms\backend\controllers\AuctionController.php(60): backend\controllers\AuctionController->render()
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AuctionController->actionView()
+#15 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#16 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#17 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): backend\controllers\AuctionController->runAction()
+#18 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#20 D:\slada48_cms\backend\web\index.php(17): yii\web\Application->run()
+#21 {main}
+2019-09-14 18:27:35 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = [
+    'id' => '9'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/update?id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '54445'
+    'REDIRECT_URL' => '/admin/auction/view'
+    'REDIRECT_QUERY_STRING' => 'id=9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=9'
+    'REQUEST_URI' => '/admin/auction/view?id=9'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568485655.388
+    'REQUEST_TIME' => 1568485655
+]
+2019-09-14 18:28:01 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'id' of non-object in D:\slada48_cms\backend\views\auction\view.php:41
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(245): ::call_user_func:{D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php:245}()
+#1 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\DetailView->init()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): yii\widgets\DetailView->__construct()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs()
+#5 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build()
+#6 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject()
+#8 D:\slada48_cms\backend\views\auction\view.php(46): yii\base\Widget::widget()
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): yii\web\View->unknown()
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\web\View->renderPhpFile()
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\web\View->renderFile()
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\web\View->render()
+#13 D:\slada48_cms\backend\controllers\AuctionController.php(60): backend\controllers\AuctionController->render()
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AuctionController->actionView()
+#15 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#16 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#17 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): backend\controllers\AuctionController->runAction()
+#18 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#20 D:\slada48_cms\backend\web\index.php(17): yii\web\Application->run()
+#21 {main}
+2019-09-14 18:28:01 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = [
+    'id' => '9'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/update?id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '54471'
+    'REDIRECT_URL' => '/admin/auction/view'
+    'REDIRECT_QUERY_STRING' => 'id=9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=9'
+    'REQUEST_URI' => '/admin/auction/view?id=9'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568485681.144
+    'REQUEST_TIME' => 1568485681
+]
+2019-09-14 18:39:31 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'product_id' doesn't have a default value in D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `au...')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('auction', Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 D:\slada48_cms\backend\controllers\AuctionController.php(76): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\AuctionController->actionCreate()
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'product_id' doesn't have a default value
+The SQL being executed was: INSERT INTO `auction` (`auc_img`, `auc_title`, `auc_text`, `start_date`, `end_date`, `active`, `bid_min`) VALUES ('', 'Тортик х', 'Тортик наполненный полным сшщастьеМмм...', '2019-09-14 21:35', '2019-09-14 21:35', 1, 25) in D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `au...')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `au...')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('auction', Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 D:\slada48_cms\backend\controllers\AuctionController.php(76): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\AuctionController->actionCreate()
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'product_id' doesn't have a default value
+)
+
+2019-09-14 18:39:31 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => '4IFD60xhaWuPWCvbuDdyBwVdrrur3jXN9OOoS4kWAR635RWFGlUFEuEXe67BQBVvKC7r8MSGeLyjhM8m2Ht0Jw=='
+    'Auction' => [
+        'auc_img' => ''
+        'auc_title' => 'Тортик х'
+        'auc_text' => 'Тортик наполненный полным сшщастьеМмм...'
+        'start_date' => '2019-09-14 21:35'
+        'end_date' => '2019-09-14 21:35'
+        'active' => '1'
+        'bid_min' => '25'
+    ]
+]
+
+$_FILES = [
+    'Auction' => [
+        'name' => [
+            'auc_img' => 'overwatch-ashe-devushka-art.jpg'
+        ]
+        'type' => [
+            'auc_img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'auc_img' => 'C:\\wamp64\\tmp\\php6A3D.tmp'
+        ]
+        'error' => [
+            'auc_img' => 0
+        ]
+        'size' => [
+            'auc_img' => 192959
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194319'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarynSiYLTkY6DA7BnTB'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55196'
+    'REDIRECT_URL' => '/admin/auction/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486370.975
+    'REQUEST_TIME' => 1568486370
+]
+2019-09-14 18:40:55 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Auction::product_id in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('product_id')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('product_id')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\Auction), Array)
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#5 D:\slada48_cms\backend\controllers\AuctionController.php(76): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AuctionController->actionCreate()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-09-14 18:40:55 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => '4IFD60xhaWuPWCvbuDdyBwVdrrur3jXN9OOoS4kWAR635RWFGlUFEuEXe67BQBVvKC7r8MSGeLyjhM8m2Ht0Jw=='
+    'Auction' => [
+        'auc_img' => ''
+        'auc_title' => 'Тортик х'
+        'auc_text' => 'Тортик наполненный полным сшщастьеМмм...'
+        'start_date' => '2019-09-14 21:35'
+        'end_date' => '2019-09-14 21:35'
+        'active' => '1'
+        'bid_min' => '25'
+    ]
+]
+
+$_FILES = [
+    'Auction' => [
+        'name' => [
+            'auc_img' => 'overwatch-ashe-devushka-art.jpg'
+        ]
+        'type' => [
+            'auc_img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'auc_img' => 'C:\\wamp64\\tmp\\phpB368.tmp'
+        ]
+        'error' => [
+            'auc_img' => 0
+        ]
+        'size' => [
+            'auc_img' => 192959
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194319'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarynSiYLTkY6DA7BnTB'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55291'
+    'REDIRECT_URL' => '/admin/auction/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486455.255
+    'REQUEST_TIME' => 1568486455
+]
+2019-09-14 18:41:09 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Auction::product_id in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('product_id')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('product_id')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\Auction), Array)
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#5 D:\slada48_cms\backend\controllers\AuctionController.php(76): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AuctionController->actionCreate()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-09-14 18:41:09 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'soFX2X839xlAbxe4eFHZHkrx1CCDi7xSw2SfHyRT8ETl5QG3KQObYC4gR80BJr52Z4KRa-zT8SOUA_hydT6FfQ=='
+    'Auction' => [
+        'auc_img' => ''
+        'auc_title' => 'Тортик х'
+        'auc_text' => 'Тортик наполненный полным сшщастьеМмм...'
+        'start_date' => '2019-09-14 21:35'
+        'end_date' => '2019-09-14 21:35'
+        'active' => '1'
+        'bid_min' => '25'
+    ]
+]
+
+$_FILES = [
+    'Auction' => [
+        'name' => [
+            'auc_img' => 'overwatch-ashe-devushka-art.jpg'
+        ]
+        'type' => [
+            'auc_img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'auc_img' => 'C:\\wamp64\\tmp\\phpE92F.tmp'
+        ]
+        'error' => [
+            'auc_img' => 0
+        ]
+        'size' => [
+            'auc_img' => 192959
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194319'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryy9Nm7PM09RAfUvSt'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55305'
+    'REDIRECT_URL' => '/admin/auction/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486469.016
+    'REQUEST_TIME' => 1568486469
+]
+2019-09-14 18:42:46 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Auction::product_id in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('product_id')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('product_id')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\Auction), Array)
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#5 D:\slada48_cms\backend\controllers\AuctionController.php(76): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AuctionController->actionCreate()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-09-14 18:42:46 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'soFX2X839xlAbxe4eFHZHkrx1CCDi7xSw2SfHyRT8ETl5QG3KQObYC4gR80BJr52Z4KRa-zT8SOUA_hydT6FfQ=='
+    'Auction' => [
+        'auc_img' => ''
+        'auc_title' => 'Тортик х'
+        'auc_text' => 'Тортик наполненный полным сшщастьеМмм...'
+        'start_date' => '2019-09-14 21:35'
+        'end_date' => '2019-09-14 21:35'
+        'active' => '1'
+        'bid_min' => '25'
+    ]
+]
+
+$_FILES = [
+    'Auction' => [
+        'name' => [
+            'auc_img' => 'overwatch-ashe-devushka-art.jpg'
+        ]
+        'type' => [
+            'auc_img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'auc_img' => 'C:\\wamp64\\tmp\\php66D7.tmp'
+        ]
+        'error' => [
+            'auc_img' => 0
+        ]
+        'size' => [
+            'auc_img' => 192959
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194319'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryy9Nm7PM09RAfUvSt'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55395'
+    'REDIRECT_URL' => '/admin/auction/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486566.719
+    'REQUEST_TIME' => 1568486566
+]
+2019-09-14 18:43:44 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Auction::product_id in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('product_id')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('product_id')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\Auction), Array)
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#5 D:\slada48_cms\backend\controllers\AuctionController.php(73): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AuctionController->actionCreate()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-09-14 18:43:44 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'soFX2X839xlAbxe4eFHZHkrx1CCDi7xSw2SfHyRT8ETl5QG3KQObYC4gR80BJr52Z4KRa-zT8SOUA_hydT6FfQ=='
+    'Auction' => [
+        'auc_img' => ''
+        'auc_title' => 'Тортик х'
+        'auc_text' => 'Тортик наполненный полным сшщастьеМмм...'
+        'start_date' => '2019-09-14 21:35'
+        'end_date' => '2019-09-14 21:35'
+        'active' => '1'
+        'bid_min' => '25'
+    ]
+]
+
+$_FILES = [
+    'Auction' => [
+        'name' => [
+            'auc_img' => 'overwatch-ashe-devushka-art.jpg'
+        ]
+        'type' => [
+            'auc_img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'auc_img' => 'C:\\wamp64\\tmp\\php4706.tmp'
+        ]
+        'error' => [
+            'auc_img' => 0
+        ]
+        'size' => [
+            'auc_img' => 192959
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194319'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryy9Nm7PM09RAfUvSt'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55450'
+    'REDIRECT_URL' => '/admin/auction/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486624.108
+    'REQUEST_TIME' => 1568486624
+]
+2019-09-14 18:43:58 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Auction::product_id in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('product_id')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('product_id')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\Auction), Array)
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#5 D:\slada48_cms\backend\controllers\AuctionController.php(75): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AuctionController->actionCreate()
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-09-14 18:43:58 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'soFX2X839xlAbxe4eFHZHkrx1CCDi7xSw2SfHyRT8ETl5QG3KQObYC4gR80BJr52Z4KRa-zT8SOUA_hydT6FfQ=='
+    'Auction' => [
+        'auc_img' => ''
+        'auc_title' => 'Тортик х'
+        'auc_text' => 'Тортик наполненный полным сшщастьеМмм...'
+        'start_date' => '2019-09-14 21:35'
+        'end_date' => '2019-09-14 21:35'
+        'active' => '1'
+        'bid_min' => '25'
+    ]
+]
+
+$_FILES = [
+    'Auction' => [
+        'name' => [
+            'auc_img' => 'overwatch-ashe-devushka-art.jpg'
+        ]
+        'type' => [
+            'auc_img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'auc_img' => 'C:\\wamp64\\tmp\\php7EF0.tmp'
+        ]
+        'error' => [
+            'auc_img' => 0
+        ]
+        'size' => [
+            'auc_img' => 192959
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194319'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryy9Nm7PM09RAfUvSt'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55467'
+    'REDIRECT_URL' => '/admin/auction/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486638.426
+    'REQUEST_TIME' => 1568486638
+]
+2019-09-14 18:44:59 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'bid_current' doesn't have a default value in D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `au...')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('auction', Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 D:\slada48_cms\backend\controllers\AuctionController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\AuctionController->actionCreate()
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'bid_current' doesn't have a default value
+The SQL being executed was: INSERT INTO `auction` (`auc_img`, `auc_title`, `auc_text`, `start_date`, `end_date`, `active`, `bid_min`) VALUES ('', 'Тортик х', 'Тортик наполненный полным сшщастьеМмм...', '2019-09-14 21:35', '2019-09-14 21:35', 1, 25) in D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `au...')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `au...')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('auction', Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 D:\slada48_cms\backend\controllers\AuctionController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\AuctionController->actionCreate()
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'bid_current' doesn't have a default value
+)
+
+2019-09-14 18:44:59 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'soFX2X839xlAbxe4eFHZHkrx1CCDi7xSw2SfHyRT8ETl5QG3KQObYC4gR80BJr52Z4KRa-zT8SOUA_hydT6FfQ=='
+    'Auction' => [
+        'auc_img' => ''
+        'auc_title' => 'Тортик х'
+        'auc_text' => 'Тортик наполненный полным сшщастьеМмм...'
+        'start_date' => '2019-09-14 21:35'
+        'end_date' => '2019-09-14 21:35'
+        'active' => '1'
+        'bid_min' => '25'
+    ]
+]
+
+$_FILES = [
+    'Auction' => [
+        'name' => [
+            'auc_img' => 'overwatch-ashe-devushka-art.jpg'
+        ]
+        'type' => [
+            'auc_img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'auc_img' => 'C:\\wamp64\\tmp\\php6DC8.tmp'
+        ]
+        'error' => [
+            'auc_img' => 0
+        ]
+        'size' => [
+            'auc_img' => 192959
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194319'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryy9Nm7PM09RAfUvSt'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55526'
+    'REDIRECT_URL' => '/admin/auction/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486699.56
+    'REQUEST_TIME' => 1568486699
+]
+2019-09-14 18:48:10 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'bid_step' doesn't have a default value in D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `au...')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('auction', Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 D:\slada48_cms\backend\controllers\AuctionController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\AuctionController->actionCreate()
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'bid_step' doesn't have a default value
+The SQL being executed was: INSERT INTO `auction` (`auc_img`, `auc_title`, `auc_text`, `start_date`, `end_date`, `active`, `bid_min`) VALUES ('', 'Тортик х', 'Тортик наполненный полным сшщастьеМмм...', '2019-09-14 21:35', '2019-09-14 21:35', 1, 25) in D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `au...')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `au...')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('auction', Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 D:\slada48_cms\backend\controllers\AuctionController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\AuctionController->actionCreate()
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'bid_step' doesn't have a default value
+)
+
+2019-09-14 18:48:10 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'soFX2X839xlAbxe4eFHZHkrx1CCDi7xSw2SfHyRT8ETl5QG3KQObYC4gR80BJr52Z4KRa-zT8SOUA_hydT6FfQ=='
+    'Auction' => [
+        'auc_img' => ''
+        'auc_title' => 'Тортик х'
+        'auc_text' => 'Тортик наполненный полным сшщастьеМмм...'
+        'start_date' => '2019-09-14 21:35'
+        'end_date' => '2019-09-14 21:35'
+        'active' => '1'
+        'bid_min' => '25'
+    ]
+]
+
+$_FILES = [
+    'Auction' => [
+        'name' => [
+            'auc_img' => 'overwatch-ashe-devushka-art.jpg'
+        ]
+        'type' => [
+            'auc_img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'auc_img' => 'C:\\wamp64\\tmp\\php58AC.tmp'
+        ]
+        'error' => [
+            'auc_img' => 0
+        ]
+        'size' => [
+            'auc_img' => 192959
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194319'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryy9Nm7PM09RAfUvSt'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55742'
+    'REDIRECT_URL' => '/admin/auction/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486890.764
+    'REQUEST_TIME' => 1568486890
+]
+2019-09-14 18:48:22 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'product_option_id' doesn't have a default value in D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `au...')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('auction', Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 D:\slada48_cms\backend\controllers\AuctionController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\AuctionController->actionCreate()
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'product_option_id' doesn't have a default value
+The SQL being executed was: INSERT INTO `auction` (`auc_img`, `auc_title`, `auc_text`, `start_date`, `end_date`, `active`, `bid_min`) VALUES ('', 'Тортик х', 'Тортик наполненный полным сшщастьеМмм...', '2019-09-14 21:35', '2019-09-14 21:35', 1, 25) in D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `au...')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `au...')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('auction', Array)
+#4 D:\slada48_cms\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 D:\slada48_cms\backend\controllers\AuctionController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\AuctionController->actionCreate()
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('create', Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/create', Array)
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'product_option_id' doesn't have a default value
+)
+
+2019-09-14 18:48:22 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'soFX2X839xlAbxe4eFHZHkrx1CCDi7xSw2SfHyRT8ETl5QG3KQObYC4gR80BJr52Z4KRa-zT8SOUA_hydT6FfQ=='
+    'Auction' => [
+        'auc_img' => ''
+        'auc_title' => 'Тортик х'
+        'auc_text' => 'Тортик наполненный полным сшщастьеМмм...'
+        'start_date' => '2019-09-14 21:35'
+        'end_date' => '2019-09-14 21:35'
+        'active' => '1'
+        'bid_min' => '25'
+    ]
+]
+
+$_FILES = [
+    'Auction' => [
+        'name' => [
+            'auc_img' => 'overwatch-ashe-devushka-art.jpg'
+        ]
+        'type' => [
+            'auc_img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'auc_img' => 'C:\\wamp64\\tmp\\php873F.tmp'
+        ]
+        'error' => [
+            'auc_img' => 0
+        ]
+        'size' => [
+            'auc_img' => 192959
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194319'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://slada48.loc:8080'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryy9Nm7PM09RAfUvSt'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55757'
+    'REDIRECT_URL' => '/admin/auction/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486902.683
+    'REQUEST_TIME' => 1568486902
+]
+2019-09-14 18:48:42 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Auction::bid_step in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('bid_step')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('bid_step')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(238): yii\helpers\BaseArrayHelper::getValue(Object(common\models\Auction), 'bid_step')
+#3 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#10 D:\slada48_cms\backend\views\auction\view.php(47): yii\base\Widget::widget(Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): require('D:\\slada48_cms\\...')
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\slada48_cms\\...', Array)
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\slada48_cms\\...', Array, Object(backend\controllers\AuctionController))
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('view', Array, Object(backend\controllers\AuctionController))
+#15 D:\slada48_cms\backend\controllers\AuctionController.php(60): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\AuctionController->actionView('11')
+#17 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('view', Array)
+#20 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/view', Array)
+#21 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+2019-09-14 18:48:42 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = [
+    'id' => '11'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55772'
+    'REDIRECT_URL' => '/admin/auction/view'
+    'REDIRECT_QUERY_STRING' => 'id=11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=11'
+    'REQUEST_URI' => '/admin/auction/view?id=11'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486922.548
+    'REQUEST_TIME' => 1568486922
+]
+2019-09-14 18:49:02 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Auction::bid_step in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('bid_step')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('bid_step')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(238): yii\helpers\BaseArrayHelper::getValue(Object(common\models\Auction), 'bid_step')
+#3 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#10 D:\slada48_cms\backend\views\auction\view.php(47): yii\base\Widget::widget(Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): require('D:\\slada48_cms\\...')
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\slada48_cms\\...', Array)
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\slada48_cms\\...', Array, Object(backend\controllers\AuctionController))
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('view', Array, Object(backend\controllers\AuctionController))
+#15 D:\slada48_cms\backend\controllers\AuctionController.php(60): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\AuctionController->actionView('11')
+#17 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('view', Array)
+#20 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/view', Array)
+#21 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+2019-09-14 18:49:02 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = [
+    'id' => '11'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55781'
+    'REDIRECT_URL' => '/admin/auction/view'
+    'REDIRECT_QUERY_STRING' => 'id=11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=11'
+    'REQUEST_URI' => '/admin/auction/view?id=11'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486942.189
+    'REQUEST_TIME' => 1568486942
+]
+2019-09-14 18:49:09 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Auction::bid_step in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('bid_step')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('bid_step')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(238): yii\helpers\BaseArrayHelper::getValue(Object(common\models\Auction), 'bid_step')
+#3 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#10 D:\slada48_cms\backend\views\auction\view.php(47): yii\base\Widget::widget(Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): require('D:\\slada48_cms\\...')
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\slada48_cms\\...', Array)
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\slada48_cms\\...', Array, Object(backend\controllers\AuctionController))
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('view', Array, Object(backend\controllers\AuctionController))
+#15 D:\slada48_cms\backend\controllers\AuctionController.php(60): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\AuctionController->actionView('11')
+#17 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('view', Array)
+#20 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/view', Array)
+#21 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+2019-09-14 18:49:09 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = [
+    'id' => '11'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55786'
+    'REDIRECT_URL' => '/admin/auction/view'
+    'REDIRECT_QUERY_STRING' => 'id=11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=11'
+    'REQUEST_URI' => '/admin/auction/view?id=11'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486949.069
+    'REQUEST_TIME' => 1568486949
+]
+2019-09-14 18:49:31 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Auction::bid_step in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('bid_step')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('bid_step')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(238): yii\helpers\BaseArrayHelper::getValue(Object(common\models\Auction), 'bid_step')
+#3 D:\slada48_cms\vendor\yiisoft\yii2\widgets\DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#10 D:\slada48_cms\backend\views\auction\view.php(47): yii\base\Widget::widget(Array)
+#11 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(348): require('D:\\slada48_cms\\...')
+#12 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\slada48_cms\\...', Array)
+#13 D:\slada48_cms\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\slada48_cms\\...', Array, Object(backend\controllers\AuctionController))
+#14 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('view', Array, Object(backend\controllers\AuctionController))
+#15 D:\slada48_cms\backend\controllers\AuctionController.php(60): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\AuctionController->actionView('11')
+#17 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('view', Array)
+#20 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/view', Array)
+#21 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+2019-09-14 18:49:31 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = [
+    'id' => '11'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55791'
+    'REDIRECT_URL' => '/admin/auction/view'
+    'REDIRECT_QUERY_STRING' => 'id=11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=11'
+    'REQUEST_URI' => '/admin/auction/view?id=11'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568486971.604
+    'REQUEST_TIME' => 1568486971
+]
+2019-09-14 18:50:45 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\AuctionSearch::product_id in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('product_id')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('product_id')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\AuctionSearch), Array)
+#3 D:\slada48_cms\common\models\AuctionSearch.php(53): yii\base\Model->validate()
+#4 D:\slada48_cms\backend\controllers\AuctionController.php(43): common\models\AuctionSearch->search(Array)
+#5 [internal function]: backend\controllers\AuctionController->actionIndex()
+#6 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('index', Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/index', Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-09-14 18:50:45 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/view?id=11'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55810'
+    'REDIRECT_URL' => '/admin/auction/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568487045.776
+    'REQUEST_TIME' => 1568487045
+]
+2019-09-14 18:50:48 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\AuctionSearch::product_id in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('product_id')
+#1 D:\slada48_cms\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('product_id')
+#2 D:\slada48_cms\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\AuctionSearch), Array)
+#3 D:\slada48_cms\common\models\AuctionSearch.php(53): yii\base\Model->validate()
+#4 D:\slada48_cms\backend\controllers\AuctionController.php(43): common\models\AuctionSearch->search(Array)
+#5 [internal function]: backend\controllers\AuctionController->actionIndex()
+#6 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('index', Array)
+#9 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/index', Array)
+#10 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-09-14 18:50:48 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/view?id=11'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55811'
+    'REDIRECT_URL' => '/admin/auction/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568487048.37
+    'REQUEST_TIME' => 1568487048
+]
+2019-09-14 18:51:41 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\AuctionSearch::product_id in D:\slada48_cms\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\slada48_cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('product_id')
+#1 D:\slada48_cms\common\models\AuctionSearch.php(62): yii\db\BaseActiveRecord->__get('product_id')
+#2 D:\slada48_cms\backend\controllers\AuctionController.php(43): common\models\AuctionSearch->search(Array)
+#3 [internal function]: backend\controllers\AuctionController->actionIndex()
+#4 D:\slada48_cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\slada48_cms\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 D:\slada48_cms\vendor\yiisoft\yii2\base\Module.php(529): yii\base\Controller->runAction('index', Array)
+#7 D:\slada48_cms\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auction/index', Array)
+#8 D:\slada48_cms\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\slada48_cms\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2019-09-14 18:51:41 [::1][3][5hm8s4l4tcl2gplusm9vlt1p7o][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL\";}'
+    'advanced-frontend' => 'cujmo2n1dg9omd1vb9g6pe1hnd'
+    'advanced-backend' => '5hm8s4l4tcl2gplusm9vlt1p7o'
+    '_identity-backend' => '231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf-backend' => 'aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdVnV4lynOPuywgh-sEKoXMqWggmQmu9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://slada48.loc:8080/admin/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'slada48.loc:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://slada48.loc:8080/admin/auction/view?id=11'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=1673e5e76b6b4d8fb094d0cd8cc9946992efeb1b43ba55d9f343565d24a4574da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Vr4NqIy4Qd_ZokUdmmk1oAWIMZ0rsXNL%22%3B%7D; advanced-frontend=cujmo2n1dg9omd1vb9g6pe1hnd; advanced-backend=5hm8s4l4tcl2gplusm9vlt1p7o; _identity-backend=231b7679589120a57a3609767892baec690848010b52573343d186db185bdbbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=aa3e94edfad038ac87ac0c90354bb3a1f92c0078bd601d21698d794fa8d36d83a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdVnV4lynOPuywgh-sEKoXMqWggmQmu9%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.2.18;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI\\;C:\\Users\\Home\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Home\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.2.18 Server at slada48.loc Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.2.18'
+    'SERVER_NAME' => 'slada48.loc'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/slada48_cms'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/slada48_cms/backend/web/index.php'
+    'REMOTE_PORT' => '55823'
+    'REDIRECT_URL' => '/admin/auction/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/auction/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568487101.232
+    'REQUEST_TIME' => 1568487101
+]

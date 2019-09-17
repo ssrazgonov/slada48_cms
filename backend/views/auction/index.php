@@ -23,17 +23,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
-
-
             'id',
-            'product_id',
             'start_date',
             'end_date',
             'active',
-            //'winner_bid_id',
-            //'bid_current',
-            //'bid_step',
-
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

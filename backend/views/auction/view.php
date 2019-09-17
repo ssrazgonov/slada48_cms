@@ -38,12 +38,12 @@ $this->params['breadcrumbs'][] = $this->title;
                     'label' => 'Победитель',
                     'format' => 'html',
                     'value' => function($data) {
-                        return $data->winner_bid_id ? "<a href='/admin/user/view?id={$data->winner->id}'>{$data->winner->email}</a>" : 'НЕТ';
+
+                        return !empty($data->winner->id) ? "<a href='/admin/user/view?id={$data->winner->id}'>{$data->winner->email}</a>" : 'НЕТ';
                     }
 
             ],
             'bid_current',
-            'bid_step',
         ],
     ]) ?>
 

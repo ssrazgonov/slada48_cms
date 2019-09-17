@@ -7,6 +7,7 @@ use common\models\Auction;
 use common\models\Product;
 use common\models\Bid;
 use common\models\User;
+use frontend\models\AuctionForm;
 use yii\web\Controller;
 use Yii;
 
@@ -15,13 +16,15 @@ class AuctionController extends Controller
     public function actionIndex() {
 
         $auction = Auction::find()->where(['active' => 1])->one();
+        $auctionForm = new AuctionForm();
+
         $active = true;
 
         if (time() >= strtotime($auction->end_date)) {
             $active = false;
         }
 
-        return $this->render('index', compact('auction','active'));
+        return $this->render('index', compact('auction','active', 'auctionForm'));
     }
 
     public function actionGetExpired() {
@@ -34,8 +37,20 @@ class AuctionController extends Controller
 
         if (!Yii::$app->user->isGuest) {
 
+            $auctionForm = new AuctionForm();
+            $auctionForm->load(Yii::$app->request->post());
+            $auctionForm->validate();
+
+            if(!$auctionForm->load(Yii::$app->request->post()) && !$auctionForm->validate()) {
+
+                var_dump($auctionForm->errors); exit;
+                Yii::$app->session->setFlash('error', 'Вы уже сделали ставку');
+                return $this->redirect(['auction/index']);
+            }
+
             $bid = new Bid();
-            $auction = Auction::findOne(Yii::$app->request->post('Auction'));
+            $auction = Auction::findOne($auctionForm->aucId);
+
             $prev_winner = $auction->winner;
 
             if (time() >= strtotime($auction->end_date)) {
@@ -43,13 +58,15 @@ class AuctionController extends Controller
                 return $this->redirect(['auction/index']);
             }
 
-            if($auction->winner->id == Yii::$app->user->id) {
+            if($auction->winner_bid_id && $auction->winner && $auction->winner->id == Yii::$app->user->id) {
                 Yii::$app->session->setFlash('error', 'Вы уже сделали ставку');
                 return $this->redirect(['auction/index']);
             }
 
+
+
             $bid->auc_id = $auction->id;
-            $bid->bid = $auction->bid_current + $auction->bid_step;
+            $bid->bid = $auction->bid_current + $auction->bid_min;
             $bid->bidder_id = Yii::$app->user->id;
 
             if (!$bid->save()) {
@@ -65,7 +82,10 @@ class AuctionController extends Controller
                 return $this->redirect(['auction/index']);
             }
 
-            Auction::sendEmail($prev_winner);
+            if ($prev_winner) {
+                Auction::sendEmail($prev_winner);
+            }
+
             Yii::$app->session->setFlash('success', 'Ваша ставка принята');
             return $this->redirect(['auction/index']);
         } else {

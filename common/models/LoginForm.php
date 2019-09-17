@@ -12,6 +12,7 @@ class LoginForm extends Model
     public $email;
     public $password;
     public $rememberMe = true;
+    public $redirect = false;
 
     private $_user;
 
@@ -28,6 +29,7 @@ class LoginForm extends Model
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
             ['password', 'validatePassword'],
+            ['redirect', 'safe'],
         ];
     }
 

@@ -17,7 +17,7 @@ class AuctionSearch extends Auction
     public function rules()
     {
         return [
-            [['id', 'product_id', 'active', 'winner_bid_id', 'bid_current', 'bid_step'], 'integer'],
+            [['id', 'active', 'winner_bid_id', 'bid_current'], 'integer'],
             [['start_date', 'end_date'], 'safe'],
         ];
     }
@@ -59,13 +59,11 @@ class AuctionSearch extends Auction
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'product_id' => $this->product_id,
             'start_date' => $this->start_date,
             'end_date' => $this->end_date,
             'active' => $this->active,
             'winner_bid_id' => $this->winner_bid_id,
             'bid_current' => $this->bid_current,
-            'bid_step' => $this->bid_step,
         ]);
 
         return $dataProvider;

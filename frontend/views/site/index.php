@@ -65,7 +65,7 @@ JS;
                                     'callBack' => $callBackScript
                                 ]) ?>
                             </div>
-                            <p class="card-text mt-2">Купить торт за: <a class="text-success" href=""><?= $auction->bid_current + $auction->bid_step ?> руб.</a></p>
+                            <p class="card-text mt-2">Купить торт за: <a class="text-success" href=""><?= $auction->bid_current + $auction->bid_min ?> руб.</a></p>
 
                             <a href="<?= \yii\helpers\Url::to(['auction/index']) ?>" class="btn btn-success mt-2">участвовать</a>
                             <a href="#" class="btn btn-primary mt-2">Условия участия</a>

@@ -16,8 +16,6 @@ $this->params['breadcrumbs'][] = 'Редактирование';
 
     <?= $this->render('_formUpdate', [
         'model' => $model,
-        'products' => $products,
-        'product_options' => $product_options,
         'uploadImage' => $uploadImage
     ]) ?>
 

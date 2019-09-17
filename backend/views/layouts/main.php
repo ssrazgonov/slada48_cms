@@ -30,7 +30,7 @@ AppAsset::register($this);
 
 <body>
 <?php $this->beginBody() ?>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top container-fluid" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,14 +43,14 @@ AppAsset::register($this);
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Панель управления</a></li>
-                <li><a href="#">Настройки сайта</a></li>
-                <li><a href="#">Профиль администратора</a></li>
-                <li><a href="#">Помощь</a></li>
+                <?php if (!Yii::$app->user->isGuest): ?>
+                <li>
+                    <?php \yii\widgets\ActiveForm::begin(['action' => \yii\helpers\Url::to(['site/logout'])])?>
+                        <button class="btn btn-warning" type="submit">Выход</button>
+                    <?php \yii\widgets\ActiveForm::end() ?>
+                </li>
+                <?php endif; ?>
             </ul>
-            <form class="navbar-form navbar-right">
-                <input type="text" class="form-control" placeholder="Поиск...">
-            </form>
         </div>
     </div>
 </div>

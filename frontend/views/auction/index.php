@@ -70,21 +70,26 @@ JS;
 
                     <?php if ($active): ?>
                     <div class="auction-price mb-3">
-                        <h4>Текущая цена аукциона: <?= $auction->bid_current + $auction->bid_step ?> руб.</h4>
+                        <h4>Текущая цена аукциона: <?= $auction->bid_current + $auction->bid_min ?> руб.</h4>
                     </div>
 
                     <div class="auction-page-controls">
                         <?php if (Yii::$app->user->isGuest): ?>
                             <div class="mb-2">Авторизуйтесь на сайте что бы делать ставки</div>
-                            <a href="<?= \yii\helpers\Url::to(['site/login'])?>" class="btn btn-dark">Войти</a>
-                            <a href="<?= \yii\helpers\Url::to(['site/register'])?>" class="btn btn-warning">Регистрация</a>
+                            <a href="<?= \yii\helpers\Url::to(['site/login', 'redirect' => 'auction/index'])?>" class="btn btn-dark">Войти</a>
+                            <a href="<?= \yii\helpers\Url::to(['site/signup'])?>" class="btn btn-warning">Регистрация</a>
                         <?php else: ?>
                             <?php
-                                $bid = $auction->bid_current + $auction->bid_step;
+                                $bid = $auction->bid_current + $auction->bid_min;
                             ?>
                             <?php $form = \yii\widgets\ActiveForm::begin(['action' => ['auction/make-bid']]); ?>
-                                <?= \yii\helpers\Html::submitButton("Сделать ставку {$bid} руб.", ['class' => 'btn btn-warning mb-3']) ?>
-                                <?= $form->field($auction, 'id')->hiddenInput()->label(''); ?>
+                                <?= $form->field($auctionForm, 'bid')
+                                    ->textInput(['value' => $auction->bid_current + $auction->bid_min])
+                                    ->label('Ваша ставка в размере от ' .
+                                        ($auction->bid_current + $auction->bid_min) .
+                                        ' до ' . ($auction->bid_current + $auction->bid_max)) ?>
+                                <?= \yii\helpers\Html::submitButton("Сделать ставку", ['class' => 'btn btn-warning mb-3']) ?>
+                                <?= $form->field($auctionForm, 'aucId')->hiddenInput(['value' => $auction->id])->label(''); ?>
                             <?php \yii\widgets\ActiveForm::end(); ?>
                             <?php if(Yii::$app->session->hasFlash('success')):?>
                                 <div class="alert alert-dark">
@@ -106,33 +111,15 @@ JS;
         <div class="bids">
 
             <?php if ($auction->bids): ?>
-            <h3>Текущие ставки:</h3>
-            <?foreach ($auction->bids as $bid) : ?>
-                <li class="badge-dark p-3 mb-3 list-unstyled">Участник аукциона: <?= $bid->user->username ?> сделал(а) ставку в размере: <?= $bid->bid ?> руб.</li>
-            <? endforeach; ?>
+                <h3>Текущие ставки:</h3>
+                <?php foreach ($auction->bids as $bid) : ?>
+                    <li class="badge-dark p-3 mb-3 list-unstyled">Участник аукциона: <?= $bid->user ? $bid->user->username : 'Гость' ?> сделал(а) ставку в размере: <?= $bid->bid ?> руб.</li>
+                <?php endforeach; ?>
             <?php endif; ?>
         </div>
 
         <div class="auc-text mb-5">
-            <p>&nbsp;</p>
-            <h2><strong>Условия участия&nbsp;</strong></h2>
-            <div>&nbsp;</div>
-            <p>Для участия&nbsp;в аукционе Вам необходимо&nbsp;<a href="http://www.slada48.ru/join?r=auc">зарегистрироваться на нашем сайте</a>&nbsp;или<a href="http://www.slada48.ru/login?r=auc">войти на сайт со своим паролем</a>, если вы уже зарегистрированы.</p>
-            <p>Как&nbsp;делать ставки</p>
-            <p>После&nbsp;регистрации на сайте делаем ставки с учетом шага аукциона (5 руб.): 10; 15; 20 и т.д... Если после вас сделает ставку другой покупатель, вам придет уведомление по электронной почте. Если лот&nbsp; вас все еще интересует (уже по более высокой цене) сделайте еще одну ставку.</p>
-            <p>* Обращайте внимание на правильно выставленный часовой пояс у вашего ПК.</p>
-            <p><strong>Как получить товар</strong></p>
-            <p>Если вы стали победителем торгов вам придет уведомление с контактами продавца. Звоните и договаривайтесь о времени свершения сделки в течении трех рабочих дней.</p>
-            <div>&nbsp;</div>
-            <p><strong>Пункты выдачи: Фирменные магазины "ТД Слада"</strong></p>
-            <div>&nbsp;</div>
-            <div>г. Липецк, ул. Космонавтов, 3б, фирменный магазин фабрики</div>
-            <div>г.Липецк, Октябрьский рынок, торговая точка ООО "ТД Слада"</div>
-            <div>г. Липецк, Плехановский Пассаж,&nbsp;торговая точка ООО "ТД Слада"</div>
-            <div>г. Грязи, ул. Правды, 72,&nbsp;торговая точка ООО "ТД Слада"</div>
-            <div>&nbsp;</div>
-            <div>&nbsp;</div>
-            <div><strong><a href="http://www.slada48.ru/auction/wienners">Победители аукциона</a></strong></div>
+         <?= \common\models\Page::findOne(['page_slug' => 'auc-rules'])->content ?>
         </div>
     </div>
 </main>

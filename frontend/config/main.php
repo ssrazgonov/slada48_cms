@@ -49,6 +49,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                "register" => 'site/signup',
+                "login" => 'site/login',
                 "page/<id:\w+>" => 'page/index',
                 "product/<id:\w+>" => 'product/index',
                 "category" => 'category/index',

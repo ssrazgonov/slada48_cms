@@ -8,6 +8,7 @@ use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\helpers\Url;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -101,6 +102,9 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            if ( $model->redirect ) {
+                return $this->redirect(Url::to([Yii::$app->request->get('redirect')]));
+            }
             return $this->goHome();
         } else {
             $model->password = '';
